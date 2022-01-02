@@ -22,9 +22,7 @@ const client = new Discord.Client({
 
   partials: ["MESSAGE", "CHANNEL", "REACTION", "USER"]
 });
-client.on("debug", data =>
-  client.channels.cache.get("924732014270218341").send(data)
-);
+
 const moment = require("moment");
 const AsciiTable = require("ascii-table");
 client.commands = new Discord.Collection();
@@ -61,13 +59,18 @@ client.on("ready", () => {
       type: `${types[numero] || "PLAYING"}`
     });
   }, 60000);
-
-  app.listen(80, () =>
+  
+  app.listen(8000, servidor =>
     console.log(
       "READY!",
-      "Servidor Web iniciado em https://junibot.izemlab.repl.co/"
+      "Servidor Web iniciado"
     )
   );
+  client.on("debug", data =>
+
+  client.channels.cache.get("924732014270218341").send(data)
+
+);
 });
 
 client.on("guildCreate", guild =>
@@ -216,7 +219,7 @@ const express = require("express");
 const app = express();
 const oauth2 = require("discord-oauth2");
 const session = require("express-session");
-app.listen(8080, () => console.log("Server Started!"));
+//app.listen(8080, () => console.log("Server Started!"));
 const oauthSettings = {
   clientId: "831137997545275472",
   clientSecret: process.env.clientSecret,
@@ -348,4 +351,4 @@ app.get("/auth", async (req, res) => {
   }
 });
 
-// client.login(process.env.TOKEN);
+client.login(process.env.TOKEN);
