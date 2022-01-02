@@ -1,0 +1,50 @@
+{
+	"name": "@canvacord/emoji-parser",
+	"dist-tags": {
+		"latest": "1.0.1"
+	},
+	"versions": {
+		"1.0.0": {
+			"name": "@canvacord/emoji-parser",
+			"version": "1.0.0",
+			"dependencies": {
+				"twemoji-parser": "^13.0.0"
+			},
+			"devDependencies": {
+				"@types/node": "^14.14.20",
+				"@types/twemoji-parser": "^12.1.0",
+				"canvas": "^2.6.1"
+			},
+			"dist": {
+				"integrity": "sha512-vJM6IqKjtFPyP/crtosDf4hdI+w4tk5xisjrpNLAxIFzJVbbxX/euuqnq/M0vcg4EdXSB0ZG2G8KuQ0Ik//WEw==",
+				"shasum": "d6b8ef60f616bac324ef12b0eaf87879a1bc7a64",
+				"tarball": "https://registry.npmjs.org/@canvacord/emoji-parser/-/emoji-parser-1.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf9skfCRA9TVsSAnZWagAA078QAIg8nMk4NoHZZus/nz5l\nv3UNi/paNDWHcL9jrMmduEfh4fTib4KMiivXA6RH8s4LbBRPczau0iOOQhG/\nvw3arNtoZfnPLteXcUFd+EjCT9+8aoKlZOBsc2Va7kkwxHJrBB1n04djCM87\nOJVsh6FsJvd/5jDhLyYQmWovtlvgy+5B5BjCmxeoUdHJ1Tqjjl7IYM5TlwI1\n7lKshgFkWvjC7CeUIAa8kvxh9gUinNv/DTHmFPl428AeLZdZKBhSKPMQerVp\ndRk8acFfb4ZyUxdGE9m/LMlOEK3m694Jx37vJhAbyI6yR3T3OreBH/OZLfgo\npZAs4ZUy/ltIXBHVNEJXFxwp1PUhorwfFk6QVHwj0FJTX/ZOJuMorlxivdgw\nKz4XiLe7iifvpScSDIVhXzQDWAk4mv7030c94tl6sPDlGG+nZuKGLTsvwSMq\njboJ8VjosOvW6rP7wtnPFZnjMopbC7Ant88yenOhq2rqtfo90mPBVYxR9lOX\nlGH0HbIWiKEJq52aS2by+r20qqZ3ADM2T/+d3u4Mu6VvshC32IQjLyPbX+mU\nkUVKorB5YfVeKu7YJ9Ij4rIVK6T32aZsktjozd6s5qmmNl0n6RCC8XeMVYdX\nv3yRzFOIZEbPKlmzYOn8eMMTJhHFDzPHPsKw6kFu5Ax+kpmpRz+1Ml3OEYGd\nyqn5\r\n=AP5S\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.0.1": {
+			"name": "@canvacord/emoji-parser",
+			"version": "1.0.1",
+			"dependencies": {
+				"twemoji-parser": "^13.0.0"
+			},
+			"devDependencies": {
+				"@types/node": "^14.14.20",
+				"@types/twemoji-parser": "^12.1.0",
+				"canvas": "^2.6.1"
+			},
+			"dist": {
+				"integrity": "sha512-Lb3xatdd91MR9tU4sicgrxxKg+/rVD1zKTOh55bmVF2Ri5X8vHTV+jNHTvRzkomGpyepGM+7qA4xMvG8ZqtO8g==",
+				"shasum": "b33049320e01dc5290751df5b6279d99fe2f2437",
+				"tarball": "https://registry.npmjs.org/@canvacord/emoji-parser/-/emoji-parser-1.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 20560,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf9s/YCRA9TVsSAnZWagAAXAYP/2IgpPD5JEVfVaT1fqPE\nUsgPNTrPbmkzHkpHY8qPB8q9/jtqWS0ODFODMAYVJi0e2E0eyP1KmNXSQzt3\nIYif0NmNH+yDALPD2kFNqL/ip7ufNgxElTAFP+blwcdyjFkwm9e4VWQo9HIW\nz4HBhYgctgS3Q8nCJMRCB9DxO6wkGBWJONiKd8z0okXYkv3o7RfpOSvidnN4\n/TyGC1lFp1SjVInl/tMYF0ceQr1I4Xyf9uNJxbAYyB6WHxTkm+YlSnTKq4q0\nlqXg4RJzTOJT4uX223aL3Ya+d9LMNTz8M7docxWhLxsc4s24NjPERIZkJl9F\nsa2Ix0XqkFnpi03o/rKxPJ4Iv8aXWtgtyZYdv/vGxfcopkq4CNbmViuy9WkJ\n+HtTBAzuEEKn75A3ZKgt1kV7H7cgQKQciiVRNDNbOBz3/Yq+f87u28Mn5tM6\n0k9wUKnfb/wUqXnJ+YbvFOhWaKx1FwKKIA+kybXenx6UGOgMZoXmb6k2rfHn\nzj/qAneCMiJlYG6Q+3YrZHoc08AYVSw/W7yVvhumQ9x/eezKAu8OTzD+YByZ\nfjX2Zuq//TBG5s0W9zBppFQn0QcB6ZbcNmJ22tjCjrvQFgTtvSAiavFtMkjw\n6hKAMD+mP6iBHKB3GD/tvj93+uxJcatQidZLtY8e+hvBaT40tjTjj6m4x3CD\nuv/M\r\n=rMqf\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		}
+	},
+	"modified": "2021-01-07T09:09:46.449Z",
+	"cachedAt": 1640454823402
+}

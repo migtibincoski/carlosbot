@@ -1,0 +1,404 @@
+{
+	"name": "discord-oauth2",
+	"dist-tags": {
+		"latest": "2.9.0"
+	},
+	"versions": {
+		"1.0.0": {
+			"name": "discord-oauth2",
+			"version": "1.0.0",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-nlWXZuZuhRf0uwssmebXRE4WliLGuFo3roNUYbBD2aljeM8Zn4pSB/tN4ST+pzb6LsTTatKAjjJc98UmIeaLwQ==",
+				"shasum": "b0c2be95f0fa4be881e609dbf238490375b6d62e",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 29188,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcq6UFCRA9TVsSAnZWagAAUXQP/jOQTa5x3+IPRXxeWvH5\nfwTE/Lm2Fm2mMnWDuCdxj4ZzmPy+A92O5k6B2L8RBam2pzrEMamJei6vub1H\ncbINYQXYA3rbvdVf2oh/veLGWumbs4NTl8gi+i8hGcBoYLHWMMIPG4GeXek6\n12K1Kw2o7JD0k+LK9Z9I+xbhL719/HR/5QmPh+TLRDIS62uGiGrytBuSwOot\nzwdceB5CVDqEm68VKbieQNZBLbnMxIfy3IAPZU1T1n9Ih7FjW/gt0Qap3/Vi\noSY0ngu5wggL8wLLls8KWjPaOzDsgN1ZoAXfxFeHI0ghXz2CsiJpufB88h1n\npPeqsqXFUg9mMEVxxXELVn//QQguE5iybecTfsAPh2ydozJ3Pee56+LlOwlH\nsXXTHAIlYEQBnJqaq6ncyDj2fYhOmi3JgtXr3bogCAZptuu43x5zfjzzw/9w\nVSZdrU0r+WmmYN5L3/JJprVHdEJrVYwOFodWUeWhZeSNsQURUrTntmHBxNeV\nmJndN6xjquRGvtFf66NqJqdpSydLqK3wMboj4tSIEU3gDjynCix4GQq3ftTd\n0Zb/Wbzim6JfTvvrlxPFn3KMDCtbMW0nVpwajc5YyNtqskOgAk5bzi189rgU\n2SRgH+uZWA8qENqZBKblP12+xMHYREVSbqwF9f2skk9BcrOCF2jmZbinmElf\nwSb6\r\n=MtCT\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.0.1": {
+			"name": "discord-oauth2",
+			"version": "1.0.1",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-quoIbjv8l1sleBooxvLMe8RVH2avY+1q4ezdWT0rcmixMFcHkdP7wPJFRoymhbYc6n7UN+sYWLPsDTX4RvnZcA==",
+				"shasum": "ecdb4d83b51dcecf7a1212f6686c74adf455f420",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 32854,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcq9V+CRA9TVsSAnZWagAAwC0P/3yN8HfRi0Qlyg9+V29s\nDN/dDafBSHJOeOHthBQHJ9l+dqLasvwYNFzcdo7fQUh1r8GbwltbH3j+05Kx\nL9JNmqb9DdE8jvLVeeGKZF9ZOAYOEDcnUuYNmDV+4kgegdj7GMTeh/G3Y6m0\nU9TYwos69+ptvQlVH3m9/T5PpI5dnyFKFc1YONB3S26hBOSMyywUPhCZD8oi\nC7cB8brNEB/LWQ20KRioZFxB9VfP9tShYFu34GonrKq2VedUuFXJHKJT1v8o\nqrE/gkyPq+AZF5CyoST5VzUb+Kw4tXUrxVsIieLC5jvbWnHtOgh8jDm1AEVB\nRDzCVfoae4DYUorHW0d7LCACaY52rlfXv6ZYdSmG20C3XCImhbvtvTaTt1oG\nBPRfYVb90QrkU16UBmH/IiI3kXBue+E/fwaClsMjq15nw+lGH3xd1aesC3Sd\nv3DkSK77mGbApGsvVqPnRQT6tT3XX5mkVNfKeOk61afy9Ba9XmS9VbXPOQlQ\ne574T1M+mbrLzvZhVIOdAsUVdCq0XlH2jZZRTn4Sqp2CzbHNR0rWSOQXHHXQ\nQUL6sNjffydq0bfJEpfnhDN3RU5MXKvYpYelbbnDogzRxiE08LM/cOMV/DRl\n1mkpLTvkFqoKrpC6RApnbmUlJfIDH+vN/w/3wZ1/Gw+wW8L+c7FnEnwc4xiY\n+s13\r\n=qwbQ\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.1.0": {
+			"name": "discord-oauth2",
+			"version": "1.1.0",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-ygVzJ9JaEjZjOeFUAGnrsEcDk1YC4+FxQRXjQLGWscTr7kZTda0wjxbJfx3aJdRiO1bgzEKVbYRKwIhDEGwS8A==",
+				"shasum": "8e405d799761bd140d9b65dfb4f730974146e90e",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.1.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 35410,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcr4MMCRA9TVsSAnZWagAAngAP/ApbKd4+Sr218SFz5rxC\n3FUJSRu8VOraRjii7dZQOXqYOsKLCbMOe546AZk7Jh6Lds+JLm+3aIr6EqJU\nCqnSXj+1v1AL17zFAkFiJtBzQgo3tbF4l943C6d4US9rvH+FQlWx1zfhesdY\n5t+ve88sOISXVouo2xOHXH4mJ8wQ5/rw0YJXr8pnRkjhBCk3zsfUwN4Bcpl3\n/yREehvtXBLLxLLJrJTH1FkX4bRo0XvsYUEF8VQIbNNbhbTSh9G8uXgrmnff\nal/9vNIFUjDtI7Se5s5OJn7ohFb5yxlCeukQlPKG887vcvX3jOZ0cKs/UqAl\n1rOe5YrfSktdTvoTEEX75c+ik9fzmptexMEmNTHTmC78q0mkyRm/dFDIzWxJ\nU96ZxY0Ru84RpsTNd/UESZxEyA0hee5tnlJ/HdD54wsMYN/Dh0nprhF3cP1K\nArfXiP+KHzCMr0FxcN3Ta2Ylfk6g2h29syHctjvdxvU38ZqVCVO75dwKFZ+d\nfNvd3YTand5k+EA6CMghag2MU03GwCZ5fDYpy0OV9QFfj+3LXDlMAOznxWIC\newlY3ntWUU40ORLCaJPd+x8/88Q6GBSD1YboHEL4NKCHnsut2jeqEHg1gyay\ngbkX/C/xv6r2pm21+G2IVp1UYqg0wqSAqX6V0BQGpzWkBv1kZKihP9KhgF0s\n8Odv\r\n=rWB0\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.1.1": {
+			"name": "discord-oauth2",
+			"version": "1.1.1",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-n/z1bV5B6Obr/vOFDpRGgPOCPNPhDqi/RqmdB4V+lbMPHmV0wDCwR7ou4W5TXgfG2voabuu19NRTiv3bQdZ7WA==",
+				"shasum": "e48744d03c1370a83427ad505d73af10ae932dfc",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.1.1.tgz",
+				"fileCount": 11,
+				"unpackedSize": 35391,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcsL3ZCRA9TVsSAnZWagAAMFcP/2KS9W+IxeldpQrxJZ+v\npSQCOHzHEV+ZSqiuV1JN/GTfysoLdwZuNePXdE6O3UdcWChUZn22GW5teZdm\nFweNf+K6g6Cz9iq49IChtNKKSJzNHlivJqYYtVhcYr98QyIKb2dmj+WzM2hi\nmsdOZgrZjYKIVLHJmtpofBJac4pMVeUg/21KDB+0mR03MFpcyG/t6kT2P4Kt\nZ+LFSAtpw5CRR4SbMqiCjvvsmnal4s1g/v/tsZTG4Nkc7mZCGVOn1HSHG1I8\nLErpfDOHrA9Cb8mvtn4r1nGeFzwzwAJvdMGsrm3nHQr7uDbSiJ5s92Zd+7pz\nhGA+DrDsHuDFw/IHP3jPxRjQFuPpueIqvhXO0e7y2Y+w47VUhCdHtHd8HTcG\nIQSNrgQ5i+/OxUZ5EJ/sxRkSnPE0lfYxko5i5mTnkxXDRzH+PC2sm75c4vDg\nbUjlwlyNex2vQ4W3g/uA23OWhyD8vRcC7J8KKgNU8mpHEcP9xPYmAo65sP9j\n1WqX25RGXh0jIgzoXyHmnONLpWkDI+hV5ahHOCDywrSyTyJRP4/7/eC/hcMy\n1yLS6Ta13Ryu4VuIACt4Rt1g5Dvj51jQYVKoFSHaPl3zY03qg/BDcok1WT5G\n5UuZ8R8leLmI82womAItaY9ZFLry+p/gZtioxTNGFQKTw2b2rSIb4cazU1Km\nLozM\r\n=J0Ks\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.2.0": {
+			"name": "discord-oauth2",
+			"version": "1.2.0",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-ktD/Sg3vBLkqIHplK07TaMrSk4JITUK8eldHn+zlME32JW1X+iK9pKL+QIc+/t0XO7LsCTIYMZxA04gI4s3zRA==",
+				"shasum": "119dbd61ad915be366837fc5e1dfc486b7edba8a",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.2.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 36584,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctPVPCRA9TVsSAnZWagAAYi0P/2ZdztLYJr2iWv8nx9Hp\nYlfbo/gSDb/12riQ99svpyrCjXvEYV1bjVVrQJHuDZ8A0AzbFnt0BE53Ur90\nrbi4l26vtEp1lJp8UJ9rlWneOLVvVtLxcLLnHEGyPuzPmqIAg/VioAR8pYgA\nxDiO2lw6VJV6gVh3YeQTBKToPjKB5UlqeIrVI8Vkmgajx6dWoYYwCShUgSsN\n+DhZJpY14kUj7c8ZfutiSyrUegQN3KgYISCcvkIcaaYhPl6y3fucO2XhY24m\n2D5oVjAredy0LS1YjG3ZOr/Fv2sx6KacE9JqNFwXW0Qbvp4ULOOLSSG3LPJu\nyAG299YIrpEPLyVZGmve385xQmQrUCTCn0S2FA3dhGSD2rwOuMh61mX8tGY4\nHZO5G3v2gR5NiqJGQnL4l2Dr8fCRONLFtfep5YGG24qeRlKyvonxzn550J0i\nAxwkhVz09sboGe1oneUHL30bIGaRDx0HeADyu1kn7CTPDvZiDp3gn4FXzIfh\nU4qBeY5Z71IPt6Tn7RGxaQ7xc8J6cjg2C4xlRFqoMVkNPF3BQTbeOZD87Tmo\n4c5n8pdlfiICPvYGgmSH+XiYVNULJslAg1CaEzvL8KCA/SrqLW1P8beR+SqH\nOI0IOBzRFtJM/SH045arYBQBUPS63BfxCdYsqGexxFEEo6mqX7EtUI5Yf2cd\njkL/\r\n=MsQt\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.2.1": {
+			"name": "discord-oauth2",
+			"version": "1.2.1",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-rB8LsWaiOqhbTNM6++8HhSW5SLpRTW6fckGdVh8+/vcqaJz9bkmO7izlBIObPFuAgUh23qvGwXYf9xwaWHe+Nw==",
+				"shasum": "a9482c03cf49e532bb04f027c52642139721d1dc",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.2.1.tgz",
+				"fileCount": 11,
+				"unpackedSize": 36559,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcuI/WCRA9TVsSAnZWagAAt4EQAICTWhZc4DAiV1CSxyw/\nJ46tKquQL7OWFdybqtxcrPbwm0EXhzriWkkRQ3xXHChM9/x90NLiyYcDpHi1\nPyOWLHkZdGYdK+Q0o8f8PX8uNllGUuaw6KYpGesR+feKg3RBpLRaClqkuOwX\nGPvTqepMqcNZEh6d5IjHd2XrNaITjh3+9bFgQKoVnJDxtfEbrUE7JKQ6kv7x\nrUR+Wom8ps4XQ+x8bazPrzOjPrXg43YMVBXMSwkHBJDldVszmXm1LQ1wuu24\nYyq0l3nJF0q9x5SAcGDD+w2K2Szp6uoov+5Pro6cSmpttHgax7+mVGvj//Bn\nmg4TI3gK9hPfe2wF98ENLDwHB+liHcpqzyPtKoflex0Ze2t4q/HPxEn8Eee7\nJwRQEbIR6jj9QuIv4HtisbZjKiBZ01z3Uu6qJxIHcitUD77tlt2df6Ljsduy\nltys74fE8jIXN8N/lZXSDFwlE1XNeO4H9ATHxXGBs8ybe82Pb622AXHsVQ+v\n6ApqbiQwArsVZlzLU5mWxyT3uwaHpNoSI2FLwTLDwr6t9pCe8H3mcG4N4mHo\nz8PmNF9doKBqZRGDLYLYEH8crQJz8tiRfXsyM0aOd8oQXZA9hj8y18Py5Gmo\nnl2aAY6qAh9n3XnkPGyIpFSUw+eQH1LPIQZGuME+iIq/hNxT0dDuw4d5k5PP\nlRBV\r\n=4221\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.2.2": {
+			"name": "discord-oauth2",
+			"version": "1.2.2",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-ueH/giYDx7LqHuyMPFynKuk/1eMtmUwcfOQrGp+nqwMlyUmsvS6tH/I9UFBbupBRJVLGJPqbrfyiz6tZIBN2RA==",
+				"shasum": "9c6b271655ab69f70369493c397d0b6391b2675d",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.2.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36131,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcuJRnCRA9TVsSAnZWagAAmtcQAKBWRgvMXoWoEHsHbV5i\ngKCm7TOjgxlISyCZ+lbXjCy0eAKd++S/lket1D1ZaTDGyx2KPYV5CSObaM0b\nwZ4SDilUaiP2lKI78kNv2M9SR5S67pHsRV4Yxp6MfRoye5dcVdDRJzPbzPOT\ncGE7+FzMR5NeXXtHD4cuI1NN3mOMdc3qVDGwTIf0cu6Px8AA67DhRv5UG1/3\nHefBJuj3UjzdXxnUZDMo8Syjz37R/ik5QLa1nVKW6EoVQTGZ6YusNgFNUpws\nUPY4MWgzLzxGVwwRXgoOHfHYDQoiFYBiHqTZBkwOmzj4I0b6Ir+xQmclFF/n\nFWzggzcLrydgzq9LSaN7aoV+h+FtiA9CondoROVwH01+2Y7JVYpJlkY4y3gU\nxefKKa/I7El4Y+jWFfXmJUxYIXDuR9xw7PCRu9X+UqHQbU8AOo+JB5zSBKWy\n76LkFEVNLbct8QV59Uq0a6xatmsi81Do0JGtym3/loo0UySu5zJTeuYPNfDi\nGClyTHHXfD3WKWnLXie8s7DOaWl/MxYRqxK7yY8KdsqCZaqgfBLQZtjF9wv/\n9vW7ERV8WqCkV34Hoanp/Iyk+ObNTni6BGJFvMd/DzisOPVyjgX9fBWFojFz\ni8bl3fsD5DYZRnDODaq2kUQYaAWjivIYosXMIt8FIy52ykMbCpl9zZ3UqvS8\nWNTq\r\n=E1oN\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.2.3": {
+			"name": "discord-oauth2",
+			"version": "1.2.3",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-K1uJlLkiXVCzroje9tXm9MZdbRjSRhwxHWxZTqHrP0ar5EoMrDwRHeRtvW/KLdjwfvDCjmXZeqeyE2GSv5fihg==",
+				"shasum": "b8d3252de5421a63b455830c880009dc72fcf05b",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.2.3.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36126,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcuJY0CRA9TVsSAnZWagAARFUP/Rs7XZhWx+lmzP29jVmi\naztJoikO48J039p0iayijIDrpEwhIHbjVCwzFCGGV1KnRqMQyRvTTIyzJeGn\nEZCLlAhAGLwMafmCySwKDilCzMqMxk33C0wUoPuNQJQr4Yl+FxX+0QOh87jc\ndhF2naJRro3ok/qADfyOSNTNFeSRL1J0p6y9jn7/Y62IuXzw0qSbz19gm3Ui\n6+zC9NIJbX4JLJHvFwQMMGX9WBM2ql5tL0r9iDnqt3nLEwowNtQA9ed5zLku\nqIKEDQqFGdaaPgwT1jeQv+5fO8EVmsr2ukvuR50QJ7cXCnSA9bytJT8+pdPa\n5nuo5/nC2dF8i0oAKWdUAKtNrT0FnxqcuJ0HI9OG+Pbpwwg/C7/co0tuWij0\nVcmpLAfZE5/OkbVsy2gS6i4rmC9PrPGMc5C3ul5EYMMGv9A4TmFC+2I0NbM8\nFRM0i3JXDt1Dsr6nyllmRflXbhQH9gfriBvlFywdPQ2/ZJZE9wcMLSHk2qkC\n9NosHzVtdeGehshvvJD9aLCAN6QQTENRAGKwQVqkV1lQpa4lwuerg5U1BpiG\nu5eVp79r03TkJVJe62ehjdoNEwQRUMNaVmiFaDzlwv/KoPz6J9V4FxBeOyok\nL5xaLjfqsQMd1WTAN8CRNoH3bw8csq8VbSEM4+zJrwbgth64fPHe2VLIsKqL\n53pV\r\n=a+r9\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.3.0": {
+			"name": "discord-oauth2",
+			"version": "1.3.0",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-EQx0yhmp1SlMtUyfG74oiHHigCZ5SyXjlqK+czP+KNOc+/ZIFtvOpFdImuygjHngFdVcBBxg/x/AUdZZwue7UQ==",
+				"shasum": "484e6c125fe39a07e48c7b1c4f8d0c856451d66a",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.3.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36666,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL2RPCRA9TVsSAnZWagAAB80P/iIHinaJ3YGrcbWO/POy\nJnpIiUZ2C0G7ASSFBVRi6Ne+EEGiimCgZduS6kgMz0zKiTyz9rCyDljoXzBb\nAJ1bMzG59O5mUqojqmVP3oxsg4L2bjy6gRl0nLUQzVw2tGOSX10h4ynssYPp\nj1+XQrWKJS6S3oMO9QTbBQLvAX5XM5j93XKsxPl4VqFHGTFKYc56ddO6IGSV\nMbH4E/eADfdvAuKTiPYKMxj2+QX3mCc0HRPVW46woe/ItBMWPcE65ZGi56oG\nTK0Ysb2vEB9Gmr+36JRgwNqsjRinmuoBOwlDi3rk9fM0U0YZNK8A+SGibD0y\nnMUCKUyOzE2JOCHNO4PlJK+oL9r7vsfR6RdUcW8EzIdYfuLCOF15GzA46Fe5\n568hr+/51Vq+ybs9y6uGDi9aJsiIfuzWDBgTngfx3O9P0HWzWGGepaZJtwyG\nyyfXEzyLSN3r7UZkm0YPI1+1HsKxJONSqn/gbAMEKaQgp0AJMIXNQkPe3Z5T\nsF7Md1yax+zaRqFiAG/0xOR4nudG3E1RJs8W5vrYLFV5m3pvRpIhnlwckMBv\n66GwT6qThOQPJdnFO/Q7vdAfFnIx7k5Hnxz1B27g+C6gYEck/t65riQeJCyb\ncmGwoKAg7ZwqLWuD96+JVdQqUqesNjYuyY29AmPlbFozkvljv2pJR6EvZpgR\n0djk\r\n=RRnt\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.3.1": {
+			"name": "discord-oauth2",
+			"version": "1.3.1",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-FkbIVfXOurnY5hyE4nDX+NrKWKLgGgGz19wRoC5veWHb+ADRM9kjj/YiZkqqbrZiAjeT8lqZuuRBZClW7Gv70A==",
+				"shasum": "f06c3fcf770109a97b41dcb84bafbfa6fdfb4d94",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.3.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 36637,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdf560CRA9TVsSAnZWagAAVlYP/0rLbOxzkAUbJYZJEXw+\nzcXkeeuBBCN3bpoo9e4/ol4JXVYOCGyfQKuOdFPp29DFN80qx9o2rjKgBxpu\nk7XrcaMaLKj3O8YD56KkwfWvUnEUrMnnUxc4KHdl/sC+mmwHHGkOW6hFMa5W\nburi2UmpnsQWdkd/fAWwv+YVFlk0t6yIczOeXFqO2YI1xKpd7vzY+6gu5AdM\nLE2FVscY7GGqh2dPWVOANC4AsG7+e5CaxMARD9DA7144gMJdgoC6rSxHpU4o\nDM+8I53hPI3qyDfVaWf/46o/Jz0TF8K4SikejmKehFOLheL66cH9NxakR091\nGsLJJ09gJ82aTvUSGR/yBebf3nmvtE/c3E6KuSHL9aktwinG6RDqzV9agfA0\nyUdf/UiOcpqGmqrcDVuf/iqZag9sepWTQzfc0ESLCvHMMGwRRKx1vArX8EVx\nStWU0fELdJUdAiBfkd6j2HEtJ3sYMomtxVLIfbrAd1C7cGwf0tcJ4rGYWAA+\nxmVlljw7UKo+iuCfQmkIuaAoNYnNLKjjWPoreT7U7RO0fZKey85GwW9TRAep\nxJPZTGlOHR7CZgyK4kGUuu9yTD0Cid3X2HvWdILEpz6HILFzMqv+NPrIJOQT\nfbUNCG3qNfXK9EX2exH5ORWKfLhk96Va9a1REXomfaS+Q04qtQOyx90olv48\nu+MJ\r\n=K4Od\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.4.0": {
+			"name": "discord-oauth2",
+			"version": "1.4.0",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-QwcOmrLKxaxzQXWM6zuOripqLHMqN8uRTJ9nv0vYgmKiHT7XDCDuWNJRXdbw/XYFaT2QDS4EGm50vwCDO8aEZg==",
+				"shasum": "0bb643728fb7b099b071435ec73b5521d8d2558a",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.4.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 37721,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdhOkUCRA9TVsSAnZWagAAjOsP/02ER9xwt4NpnTIVg9qJ\npcnzLPwgHiPfjlus6qrGyU3FVDzCmIYz159HuaCELAKEdHEVmT+ikRlNq26H\nRfCD94D2YQY0jRhb8cBx8ss93gJM9xX3pgMCWgqWxZ+aBYAzr6nz9iU0lbNq\nPzY+w1vDAtL/HF49tpAGSl/uXkgzBY56uNj0VkPTL03PUgHDUvUKZClhEhn9\nia+PVmbMW/lq16rf8TOu38SoI/780RKBkuI9tD+aTr4Hxb7DMIqPo7+19QqM\nABCFXQmNrQqW/AjCP14r2gKdLhv/uYLatFLljOKmYglJn4TvujIcamVjJwBX\n7XaE4xWjMqO/tYqPDObuHy1ZVX9JaojlNz9KAqqOHKvQbzd0ISq38u5c4bz2\nbyy+a3XM6TxYIc+45CkBt9bhVwIGcXP7TM2t8qKA+wzuLoCTMCCCDV0LcACH\nyKh2YnQJxfPrF49cUrXJ5egbFLdqMAddGkSO7IyD6DjvAy14Yh76ZvuZnZve\nZNuRQg/xhDGn9faHSJ7sdG4/NG/lR7LA9ktQGzdEFyL6OjmBRwaUfapYCJI6\nppmBTKGDJorJ9B5pX4btlVHTG3THLQPNtrbEAyQTY+kCgGOLmb1LxEQRc8Hs\ndVTAeKt0g97/0qaiE6rCFr2Rif3ge7oieAUOsnzj86YSwP4v7QVvBI4MG488\nWYSe\r\n=PTxK\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"1.4.1": {
+			"name": "discord-oauth2",
+			"version": "1.4.1",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-dWI6NhLjbkJgOTobuG9OQMjgAnEA/gXLkbuLiP2uS7Z7Fg44BToD0T2md5FQctH/ktg82WjiY+Jv3200fqeCwg==",
+				"shasum": "41807b00b97b26165e1427c2c3ce70b6415812f5",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-1.4.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 37775,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdhO1fCRA9TVsSAnZWagAAYY8P/AzM6v29sKjIroxU8oIV\n+xT7AjTOwWIkrzudCHCmQvz5flhbY/AL3skmli5fVTrL11/u5fq50/xxhRGg\njlrAwNhCX7EVmYShQbvkthktER+bPb2AeYGgUIJniT7jY3ykoNZrDMBdhU+L\n6tx6TL7BkLQpYf7poAq8pGosIuIYQ/0YXVJrxFtIdJoeH0gRpa/7BkP/g+Mu\nu5U+Im5IzNb9AMwxeqvh6KUJc55Sxyvj+BMshOOmqGWYsEhTORDjDZ55DCi5\nipQRxjgXBAISCyZ0z2LYc+8J/uMfapSYevhfp6i124wIVmD34XGNJBV85gf5\nx43v072kQKso8HAHGwozfOfT/mhks1PpGJWUrsNQtTMXFHjPzCIPp2UAm78w\nAkrtK3CbALF5V99TANqEeEAVNwj4fOmhSo3BHFMS/ymNh6xaiQsmgdjEtQKF\n5QU30pqhOK6JspoBD103sGZi2+0ReAQrW/4MQk4Am92vd4ez/94F4JDuf2+0\n8ET+JbmMMbvd3XGzcT4RMkiKLNU/kOwWPsdhNhX6UXXtviJ8OFxpF4ZUUb1Y\n90UdiNOHROUjlSUnXsHjv+QhgXvx/+sosQM5m9TxjDn6gbjMaLZP8LF9kq0r\n5TRQbIEQOdPB08k3ZrG2Y/yC3+F1EVCsvODpw7LsWf/b5pRsiTTBz1YOJ90R\nUjim\r\n=j4w8\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.0.0": {
+			"name": "discord-oauth2",
+			"version": "2.0.0",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-AAxjxooKkAGSsdQOmmIuAr1CRwUv7Jyqx+7jBip/YYn7qi/3THV8liOT03jXY6S6kg/kULZ/uH0060U/CXmiFg==",
+				"shasum": "fb710cdd53e77e1efd85c6a5418441e6d010b88e",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 39148,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd0d3CCRA9TVsSAnZWagAAouUP/A89W4lTMCR0fTbvxxYl\nSU6Zpu/Zl94mjEzI/+/vi9Nj/UR4bookb45q+OXIv89WcoS+neTKQ0oG4WxC\nCuEbjKNjBoiH1IP7dKI/ni5FEmQTsJXO0g9t6hf3bTfieqdPzw+ansgi2+OH\nwnkhiSY2CmQS9iOTelU8ZHXTIJPwU9IzHaC1yTtib33oF3/n3MyeHE01TYmk\nF2FaNvRtcWCPGHE15Rk7fRh/pa7Dh7bTeGhdewcKraObAT8ADjlrvxXKn2dn\nDBch4LkeKHDI8Xx+LSPgJnyQG0GoHXxvJ+Hb3KUehhchnSYRb3QBgCte3CwF\nvX9TLeqfl4HV3bFdOiyq0MvCMy0n29JcExREnkP9Yfu8PMopLPYeE2qbPvuZ\nRqwZ8IVGUYaAdqeNwj3foZlt1w34OQlpJtayvpK/6HkBS9xO9XzzVOoGTvm2\nwl4l5kOp7ezVMMY9aeULUcU+rkzU+LFwGZV+5/k9tJ/pFdzDcAZvNHpALje1\ngySus0DUM+syw37w9JDFsQvuA+izALnweiJH9lC7mzYOmz4hguQOpVRZ4WNR\nGxlKWCCkxgJXisLlf2tYmFcgFYCrAgMobxiU7Rk3bBwxue4v94FiBvqRIS6v\nblr61bG/kYxWUS7xpMTDbXuFlVhuN4Y/NieeAWMLGwB7W+RfsV16W+d3CaBx\nTm4/\r\n=ZiUp\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.0.1": {
+			"name": "discord-oauth2",
+			"version": "2.0.1",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-QZvT+d9wQA78T7O7FOhbK0QWtvvlGjHyEGPdGuJk/VcmgTT1y31dlFjGenfZUUasSpCFKW0XEQd2eSFP4TCbwA==",
+				"shasum": "8636a3f979075438c22208908540fe790d16c7c3",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 39509,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd1FQlCRA9TVsSAnZWagAA3K8P/0jezQy272KV3yfHv64I\nBv7NnktJoz/qIDw99szPX2fFota52JbNlUOfkOH6/XqXwGCAS8KGctNUsXuW\n3trh9RmpoQ5ojzB2UCowGM+s9S/iQ87ZZyLPtSDj62tqlBmn2/l8MACkhxTh\ntNP3E4ooo/0xF5pWjyfAKQamhSf8Ex5ur8FoGJHmwTtbnhhcgpVw5GQ8smQC\nKHBgNWn3HHPEnIiVgYukaW5+v1dHZuxqjfPIEOJSqPy+BhZwLV08eyhDM/Fc\ncFqshvicdUxQvuI7Cp4LB5Thv4Zo78+ACO0KgtrNL1loZZAhgiweb3n0jxgp\nLAOAZzsi7nkUvlD6AfXsxSDpQtiks5v6rP5cueOHa5k9wdH2AkVW2YtgaMy+\nCB6xlutPVo9Pvcx4b4GU+gT+4Y1Pcnsi9D5noSY6GAkmDC+y+7kzT0xurBdB\nkjMzlfVNmyZWaRBGGyYt8DLjonMtRHoFOfPGtw79+Etsn9ikdLs/a4AMLDL0\ngP2yaSqk1d0L109vSXpGxfItvSKUKeGWcFV6J0GIDuavH99srBd2fo8uRS6n\nlVsH6uXbu4oMwdjfg8Y3BSNTnxK+F8XnILbwjZRdovcOihGknkhGuktDmN+G\nwhtkz38nyZgWZFu3W1U0j16LUN21wVQ9OEihjSsKcHKn0OveFeGz6amVIw9n\n14fI\r\n=KI3v\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.0.2": {
+			"name": "discord-oauth2",
+			"version": "2.0.2",
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-35ANRmEEPhtvkrkL70OslGAq+ztFpmDEU5x3K0yiq2NCiNp/gszvRI+rJyNeIvI3OCKCSGIcqrhYZ0daowYn4Q==",
+				"shasum": "7a7aa8706b2554e0024d038501589489f891b743",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.0.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 39509,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd77ClCRA9TVsSAnZWagAARt0P/3dJJIOO+tSVVwUEW1nM\nVLH8XORHn1aWM0RQUVYIyO4TgJ/jnUH92ygM8jd2fqnkRWLMMZdWyRR+Y/Dj\nn6utuE+wKgIoZIe7apSaZ1MnZkEIEtnG3565VFv6dSUavOp9pgt0/UTg/ujD\nRFbZvwsXqytU6tqPuVOENjvBGPoQEvv0JAerWUpvjw++Bhy4+L5CYWKkd/qa\nZ4l8DOMdO8LzcxOr8wl2yydMMpBl/euCajdYClmpmmK6/ONy4hGOWcPUnve6\nHrRX/if4raywZJmroVd70rGfPFfSrDo5/5FFWxZeKk5dFZ42dGxao1/msHfq\n6gpzBO9RrI6IE/+JtZVyhf0ndXFHa+SgHPWXFRN5u3Tpk1hV44Rk6zRcNRwH\nBsFVRhHhXB0Gd+Gi8+mgRBwHRJnzhFSWdW0VzN7iTkbANIf0t7qLJd+xKC3Z\nsVDGaz6KVUWC80TnUGZvlM2hg6ZqFTSLy2Aj89Io3Dei20N8iApwbecTwemU\neubzwh0+CoYH5JO6/32vSQdFYdugp4o0naF5W35bDzaNl5jrrNzbIhXBGSJK\nIIVmO7TGb0mSZwlWcFPOOBcQSO28QDWOSgk9KXKMt5/cx3KtfFlUwhw2vqDc\nJjGAp7LPmT9/w3Oe8SM8a4iTGxWjGlSjslScWpauQeT5zIFjtjSew23LyPu6\nGQM6\r\n=tkQn\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.1.0": {
+			"name": "discord-oauth2",
+			"version": "2.1.0",
+			"devDependencies": {
+				"eslint": "^6.8.0"
+			},
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-7HItFV9y4kvGub1zOATInM7ggqioOqj/5DXRtohAPUNn+GWLefMzBXKYB+UNAf+mzrfn7sjy/0cx12vtawYstg==",
+				"shasum": "674c00815535e1dc930c70a40cc6eb12f3368fa4",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.1.0.tgz",
+				"fileCount": 13,
+				"unpackedSize": 39986,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJenfMdCRA9TVsSAnZWagAAf4gQAKE+q9zXUlHX6BLB6cLY\nppdY2q4/VbRNOuB4maxllX+aJShNaeb4LlAnLN5aWwMLDQTDH0ebgBT0NHQl\ny1fPebho52/DhoW6SuMBYA4NbJ2NPb6sTcMgdGIUpFRgT8rxEmlBw/BpMW66\nqiXZdQId1muBWx2I8LqpW7OTh7KARSM3uSMjNafFi005NIeagUoixeiFcG13\nORLR/pUqiD/4TtQAmBof8Gf0Z3goCfvN+HFQd03fF2BSCj6+xqcX/qOpQAde\n+fap7Cow/s+KWPqAtxZ1b+JMkh3PXp0C4nacxL5kdydlqqjq27K7UtAhGcCo\nxVpzYokLIQzQzP7wXTCJyhSh2x0Z92VM7WDbtlEXpIG+U4Sd0yl+fhfxYOFH\n/ZZIhMmRIVZLR0meO/w8/YHItQAVB/nm0H3aKmnhpaAPdjIWv2ueesxq+VtM\nowU/sR7wmyaL/Rh4t2FMKOXkr5HrPLofnOnhGfWD+hFdWfO+TV/rYXDIJIxB\nQb4Q5KCLFAPKvn79S2pxN2tQL/FDBKrXNpIaWq5CKv+vI8jFytePwtWzVwfg\nTpXrhyClDP8ojsdWHk/lI5c/AacBG5p5AA4EtYsAWb4MoIlD2NLyjqceWPpR\ndQcRD5+srD9/oFzBQuhRtlX6LciPXcc08iFrRRXZ21rP82cY8GjlKH3HaChY\nBI8g\r\n=4ltJ\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.2.0": {
+			"name": "discord-oauth2",
+			"version": "2.2.0",
+			"devDependencies": {
+				"eslint": "^7.0.0"
+			},
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-lLlY1nC/05NuOHOGfWqKlrF0RKIgRazQ6e6TdfqNJ41K3ftaVpcfVWZoJlzKXeADuvoK3CpEFkm2UeX/vRSqkw==",
+				"shasum": "2135a4ec5142a08bd0d927e8e17c41b2392f236d",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.2.0.tgz",
+				"fileCount": 13,
+				"unpackedSize": 39476,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJewHDACRA9TVsSAnZWagAAttYP/3BbzGb3/YRijRYvZ9AJ\noSB81YkX0cEuZ/Mn2a7Bygy3+mc/jVYmF5LqBy59fHTqGuG7xbxGf3YKyrpt\nmpa07wmtL51m0XcqmGrpkluFouWDe+JVtkFHlYLYz236jJpJfMD9t0Tp6S+2\nE7MO6bSDWhwIuAuvVMf5wKIHCTnEV467t2qEFg7yDoKuvcDHMl3LR9Kv6oNE\nrUMBbbRPctTwiy6M0lKXrldn79qspklHV6/qF2JTZBkdPBjMFakZ8GBKUN8i\nisUQLLyZu9+zigQbhPLlFgfRZFiqvVbH6HKkv+wEvK8W9IBDhhSBNSxJgVti\nH03K7cXsJ0XmlDHFNxYshanLB5nwyd3ql3JrSohvBpqvu4x2eOtt/9Pon2s3\naID3r7QghfRWIVstwlmlfx6QHvQmLfEdeNKRXmx6wWtRsCAqa7eCK3ERLt4b\nXq6D4333PSWVx50wKtjbgUFBej7WbeqifrJOmNVZoFJb+Ok//l/Q+ijfHNkP\n1PsPr6focQRxpDThqZa7LlbyPy+yxD2Ke6foldFavyn9kna3XFNJa9SlW2GE\nS6KzWECQe0zcWqYM2cEJBpd7cReHprwGv+hcGNG88k7Nkczzpwkd8Br7yZHS\nW4D5j1Qeq4bstCasVXJ6sZtHA5qIAe6SJGpz1H/wFljE2R55P53YkDpD3YQk\nHcji\r\n=sDKW\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.3.0": {
+			"name": "discord-oauth2",
+			"version": "2.3.0",
+			"devDependencies": {
+				"eslint": "^7.5.0"
+			},
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-dsNf4x99aa8BELWERwKtYG36RD6mEHwWR/nExP3sRGi5VOsEIZu0vhGj81lvwNLw0kMypF5rJH7oZJElngnnbg==",
+				"shasum": "67a071c5ce763b819661df9af2b73861aba60464",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.3.0.tgz",
+				"fileCount": 13,
+				"unpackedSize": 43953,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfHKcrCRA9TVsSAnZWagAAEzwP/3uNYWcWNqCv8D6eJIUR\nlg4QiSPpPpnCSKcZQyJmRUafs030km2Gk/IqzW4X93e7GVM3AXv+Zb4yA1/v\nbXlIaP3UxZWdMJ4iivI9FjuXvXBLVeMK8CzbnAew0gY/VXnD9ZbmBxK4VC58\nFRnmoIIn7+9NXQWILhCyfcXllBoMG8CVkG4vFT6RlbzscjyKbSpnqhlBt9I/\nOWfHQvUZodKfHieQXj0/hJlrYuVV2jhVwGSPq/ovQPupmS+JW960wXKWULDS\nVdoue9E+bMI4xpJXcFeOyJocYGtzOVKf3py65ZkQAwmykgDvTBEE3LyfsiE0\nmKC+IOEbos4SyNaNmfpr/6++HRaitSUASXeilSV8LVqNQUx/C6y3Y4wMsdS2\nlDfbtTiDXWu8IEPtMfoyTUltIXCZFX+rUxmNVx/Rqqq2ys+hrPBYZiWUK5/x\neOzpXKA82WW1KLuMUFJ6Rv98IV7WwqviUA3xyYkkH6cASJQTWAPlPlJ1BVE2\nRJtgXixtAtK4dV/xMzZu2bbIgWH7KDf7kzOo3oxBGvIq7BWv/Hdgd39UfFj8\nJzvSt+16WYH39//+mS9fO56aJlSo41RS7spkGS7NHb/SedAIdgOkYd240SPE\nCWtTXBCqDbrLIRTBhPdYZbSSHr9pAxLXEy/WnrlV7bBjSlIP/cD4XNAcMi2d\njKWQ\r\n=1D48\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.4.0": {
+			"name": "discord-oauth2",
+			"version": "2.4.0",
+			"devDependencies": {
+				"eslint": "^7.5.0"
+			},
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-UhS44esXxcOAmPj2c10jjh8w6GUIvizAO7Nnt/Msz2a3zAiH0iHc4/Tu96Pr/OAzqc+BbL9B2Q6zPifCOHDR3A==",
+				"shasum": "c52f2fa552b082bc50a2df4bc3aa7bace3ff1621",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.4.0.tgz",
+				"fileCount": 14,
+				"unpackedSize": 44844,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfWqnVCRA9TVsSAnZWagAA0Z4P/1OCZ37sZQC5bN7BN7Kq\ng0OWKUHq/rmg3ywcBQhtLA++F8tr17nyv5Trs8FDi8cnsZUuvsgVY1HYMzAK\nwvH2hAcvT7ivwmW5XmfcmEKVVKN/nQtG+9w6aD4sdhlXv6urGnhJ+s5lf96y\nyXDIHod5nqNMsED+6p4ro1wunXl5Y4++nPdVpGL7gsLRlf/qqTK8nHskSbOB\nPrAqeMiW2Vd5ovq1TcKPxGO4x0pBCHOcb+Jc26kogjVQ+UGmnKG0irJ3r77o\nJgABMavTSQ79N3f7I8KQO/gFGMFDX0YSOn+5jQehZ/s+PMXzA0txiCJuOEjY\nRgDv6vMNOE25fmGvEsQ8TJtrxdbL8Z8jnVTMbhkezZcsAu+blwvdT0BhdVzF\nJSTH7P8TlGvu0sJDT2aSf4NOJ6vw1Ft5LTy+9TaZ5WrZn31TmiO2KbOTIqB1\nVV+6inlCLCUUB23i3tuuBJa58R8ZUJNrMtbe7WlfE86AD4EMKcpvSs67KrTO\nYFdzl5/62FAeSIJqDZ/vUQbvSn/J7hGUGAV3uoyXBTOazTpSxxokbuAVBvrC\n5D0L7+/duwKkKip9KfhapMhJTxwZimUsQaVxz8AsC/eY4wT4JBTy2mB/QCTl\n92OUeyRZP/IrYLE0Hpnw54ved6oJZTMX+K9ssRnYrmLW5m7xFtKJZh3/1bAv\nFlLR\r\n=b5ZG\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.5.0": {
+			"name": "discord-oauth2",
+			"version": "2.5.0",
+			"devDependencies": {
+				"eslint": "^7.5.0"
+			},
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-CFbc2jtALlzbsNw8yBxBWWQUxVAUqa3+8ZbhD0Vrrlj+9mh3PC5Itn7r4ibndwUCTYLKPcVKDAgLEL2WdYdSAQ==",
+				"shasum": "af69b846e5af26bba9d7b3afb0f89c33bd0cd5fa",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.5.0.tgz",
+				"fileCount": 14,
+				"unpackedSize": 45850,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfY9zfCRA9TVsSAnZWagAAY7QQAKEZ/GxURDLIvM5iywab\nH/eUdWM0gw7TWJF5JiK+kfQmPYvs+Np7JUURZEkZF9A0NEqB2cw8/WMu14cu\naWTGT67hw4hONst4TrOQLeFPLfO4RpjF2bSycOIR786uyd1E7ebTcs9B2nBD\n9bsLsEnM43q2B4IYqdy9ZJ9VOnKenkNaHRHtQJcq1DnffGlUA6UISgfTJxxP\nOcWJ4ojv9UUolmHvm6L5O2f3ldVnIsNpT0fBGSGCt/nEzmRrtCeP2+6GY7DV\nC30rlufiXWEGG2Huqzy1QyZ8w1mzXC+gLGUVWukHfmQ4HsuX1EJLzNtdR87F\n/SKpi8fKjmCPFTMLxjSA8t7rGttFpjM42SMosQbOnuXLfwjQYbZQrhVu+Ose\nJoWz/O+HVYWQNYrJQMgTRQO3qbYYAdIvM6hF6kxkWFh9hHA8gxgTZvLhwdTS\n7bD3yOQHVLwR0nx+io7rzM5Fq4tDMPABHef0AU8hDN3G5eMPBRVAlPJQ03G0\nX+Y4tqwG3ECcLIefIVngLuSyghFJkMh2J7FBDoe2pb4dsna9GvT+jcsJA15h\nlL4eGNyQOeApeBaJ0hPUtgdv6/hLjaNC3LiyWVtznzJl3GAVlUF0nnUnI533\nyJDxzXWzOcg1qsiOSt+Q0gw6dB+v3TIvE86KXDVtCUCKOHl4ITrXUQF8VqJJ\n5lbp\r\n=SIH0\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.6.0": {
+			"name": "discord-oauth2",
+			"version": "2.6.0",
+			"devDependencies": {
+				"eslint": "^7.13.0"
+			},
+			"directories": {
+				"lib": "lib"
+			},
+			"dist": {
+				"integrity": "sha512-9lEt1Rp9rruFPiVQOPbe2rKJXB40fO2u9Ozjz3n/TlVYnIxCTeohVkNI/c5AoLFDZcSxFc2MtDTf9iG0X7BkRg==",
+				"shasum": "d362b386e77a3eb3135772307a253514e0dc48be",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.6.0.tgz",
+				"fileCount": 14,
+				"unpackedSize": 46197,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfrrLOCRA9TVsSAnZWagAAx0oP/0hQy8JgUkh4a96EbDKA\nzmmeXZv0p9vSicRKnSceixhgpeDh5FAzPGqi+HyYkjUp7okw4njW8RwIvyVV\ni6f6F5k+skWOzk3kwujlV8fvN0L9NoL6TQ0eC3kJBO4GKxQkqY9HEitZ1TBZ\n9aWtYY8umoCh0xWt90O5Cidf16LPpfXsL9piv5dkxsJhAqshro+BlYr2jPDI\nfdn1eOiEtW4Zuu59+6dsYjr7TS7L0zA/VVpEziPrPvT2QLiwpfYpR0tRY/lB\noHVNa7YDb30FAUph7JSVlF8qYDd7kjUxxEVY9iSQjnLCMi4ZLVBbeI3jJnx4\nPloLN07DPPo5EnMuLNS9U8vo27L+TeL9TBBjCxEXu/G6PtpbXPm/hLaP5CZi\nnadtbp6/FfMc7HXVjUn/yH7M4jhI9pyCaAbgSGM1+Anff/nq5UkUIl2Cy9Wd\n5YLMP3l6MMsNzpHESGKyA5rjcF9nMplYFAXPQ/5JHhZnQvgRzxTNCSvfGNM1\nrdFHyJoBiEUk/nYC8nzDLgatUvN6Iylwx2o62kLspC6MPBizdlPUNRBp6FOa\nk0vQO54T0o1ID0dBea0/5YBDk3/4NDkBHh4gdbVMmY9CVwRbiypqqR+kq7+Q\ns/YOhSIC8aFxDTEJc0QIf5ZRiP8piuTu+nbU/MiINF2cZ5ZDg4mFcl89oCwm\ndqyi\r\n=7S55\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.7.0": {
+			"name": "discord-oauth2",
+			"version": "2.7.0",
+			"devDependencies": {
+				"eslint": "7.30.0"
+			},
+			"dist": {
+				"integrity": "sha512-q8U78uVqrWtMR1KbW4O0Cx453LgWz/bjCgWCP/iup9+uiZ7Ba+mCw+i6xRO9aC468gsJeu/hXaN5zwmDq8tfAA==",
+				"shasum": "800d9d288ac28c2f1349c129f297c98987e7f45b",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.7.0.tgz",
+				"fileCount": 14,
+				"unpackedSize": 45611,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5P0MCRA9TVsSAnZWagAA/0kP/37mGTsm1pyo8H3qRONr\nvhdxACqxACI1SQsFnFonG5mkPYiknbutBEbkAoGjhSkyFV7iOEZauJXJuWFn\ngDbi6DVnhGBhNu8099fdgDDMDV6jQrYR3zdyUkc7e2IaV6rLstBjVIA9+35j\nmBRSepTufvJB5lazANMnKKk96noa1HgRpcvMmHEadoHPikY7N2MKftMO8vJs\n420AXbaHXKlXRg0GPMKpspqJaRrAb1Nx1J8xR0VptP4o+RuwyV/Wa63cDBHz\nwHHLSKZRxNblsMRrEvmfNuSOQ2WHvjbz2eM4Z6DuGXN5hH90RJ4o8HaxuxF3\ntDP18B2edUbur/MVuuim+W9cb3LpmwqWOn+1Qgk9Xw763p9D5dsVGQFO+Jzv\nTt+s0ydYPQQcOLHk8VajcxGMhYm7q/5uyqw09QdVawX+Eb/VD2h0mE/r9Le+\nYGAcGoUcXuDJ5eWVP8NSxbStFKuZsNC7PDod4hCDBvJ6X1yM+w31d0yG+yxB\nWWnlWzh6ymEnLQuZ8n+5mitdaSRzAxsUBMR3IjhPrhdDdCuSq49kf/Zjv5MJ\nPE+d+MrCYulPMtZCpNpv+YhtotGnW4wWZKtNVL8kzE9EULq56zWVysfj/b57\npZzPtR7mEl1js63a3qsssd0IK2gtbYZauw6V8Tvj9K7zGdHY6WaqPxNu6TZF\nu321\r\n=4u6A\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.7.1": {
+			"name": "discord-oauth2",
+			"version": "2.7.1",
+			"devDependencies": {
+				"eslint": "7.30.0"
+			},
+			"dist": {
+				"integrity": "sha512-8PiGsieFxujS6FqcDrWtrunhy5LQGIZC6n1Bi58CP/1/rusqxplj3tXMQ2DBZtw/oyDUrJwSBsYGSr7IJJwTeg==",
+				"shasum": "d71958d6f321c7bebec859ee60fc316fefef7eb7",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.7.1.tgz",
+				"fileCount": 14,
+				"unpackedSize": 46588,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhAr7VCRA9TVsSAnZWagAADxQP/3tTlalSZ/e+RMtgCjeG\nOGBMTZkTn8dR7uirlVXtWBJWVmPFi0N0/swFuwdLeEKkeiiZiqdifjn0xNwf\nNwN+16FEMsggH+IQrP5e2hq/2haMsd+j5TTWkBbCkB5FlVR378AiwRIy4a2h\nX2DRIaRcAmJ1NMLU4ihW/t0tFtmO+zebLNIRVW5nbJ3qE09hhguPWDrq2vKu\nTNDzlSoSZl6cuwps0wylCmuYEAg4rc/gOCSR6HsBNPCuYdSCGmww3/NIPbU4\ncPkLp6LpE/xYhM9hQ9lRb0DGZaG2qWWPzWxRmdDixkbiTBV/5uMLm6CxxaaF\nK75cNDDjkSom4b6Tv/wUbc+JDo21pmJF7uS4E1SBtXmTsaa9MbmvhW2w2/Pm\n1TFqGBX+D41svuTNVzZ4OUIAzf8NSvTTl9ODB1nlHdo2lrF1kKWvfMGhxwuZ\n/414YCgdHMBh8dF5K95KnDQB45Y0PK7UfyXaFmerSCCOUO1euPqoPS8aPFaW\n8gtxmTGGz7oBszcZFt60lREW2AAA1m/F3ZvBqpVBlYfRInsAAXfzAj8RINX8\n7oIoYCySqfcvr7ZAHIWxhT+Qu3T3jyqp6IVRMYuXMyuN/j9hXezX/B2/LprG\nQqQHNt9iloU0xxww5uhqwPOW9b3t+IQRI0lP/5lcifoelAuDKLsYmPNlq9iU\nYszf\r\n=OETb\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		},
+		"2.8.0": {
+			"name": "discord-oauth2",
+			"version": "2.8.0",
+			"devDependencies": {
+				"eslint": "7.32.0"
+			},
+			"dist": {
+				"integrity": "sha512-m0Tq2k1rqoIv63Ywb3gid3L5/hz9vlGzoOv/salC1/1BzesQQol8BS4hXKDOjdK6mF6VKUYGfkRmXc2pRhOJqg==",
+				"shasum": "31560c6a43cd40da38e4140254b66962f61913db",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.8.0.tgz",
+				"fileCount": 14,
+				"unpackedSize": 46737
+			}
+		},
+		"2.9.0": {
+			"name": "discord-oauth2",
+			"version": "2.9.0",
+			"devDependencies": {
+				"eslint": "7.32.0",
+				"prettier": "^2.5.1",
+				"prettier-eslint-cli": "^5.0.1"
+			},
+			"dist": {
+				"integrity": "sha512-2DtocOmsXw5KjhW4eUMpr6RAih+juON0DOzSWr6F8qZePzuOJWznHbqDJmU70YB4Wv2Psyc6Shr3SEvRQ2Gk4Q==",
+				"shasum": "5fb64f79f92f654aa4c7d44e993e4dc257126628",
+				"tarball": "https://registry.npmjs.org/discord-oauth2/-/discord-oauth2-2.9.0.tgz",
+				"fileCount": 16,
+				"unpackedSize": 48419,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhwjCiCRA9TVsSAnZWagAAKQIP+wYb5jzc2GAacdSCSD6/\nmYd5HgZatJBnb418zg3gZuz/M+gYU4nsManKwArXVFjmsIUrrnBHFKxoNaIK\nuMIK9T86AduzCN71H5Vad5zekaYht5uCbJxfxhoVOvJG8kRozRutdHeX8EQ4\ncjuPjv+PA1zIcPk0TZRIbXTgOnGFEaBE+CjsVw1AlK9czUznIsc8f0lTlhyB\nZA5CQFCOJv30zEOxu6iwnuk/96sAm5j9BG6FVhkaXN69RCjb1gk/h9f8CkDn\nhNaBueRyi5cBuqdmjEKHA3JJW6YMgidIm1R353AeX7+8T/fFIkZtPZu83Yny\nsV+jcI4Nj2+7Xldx5zLLoK4i3nFvdkdIrpUqzFYNdznB+WauW1KVysXTPGF0\nA4cFylchdcMyU7T/ezl0W64KymDsGW8mqi+M4I1Jjtt1+lGb8Q7XkrqlEo5Q\nXJjZnTKr/XZLPMPIhs8eHNeOyMv85Nb1+8DC20ukgP7trWuTyBImTdQR+GLH\n+WbEKbDrd6WCt7x2mApizDBvY9ECtGtUrMYvYEcu2jjtQ+9iHDYQU6VULVtt\nTWcr3jpmyDP5F+yIMLZChfkQkH8B63GQ5qNYEGnOblXYdzBmUd6UlCeHChFT\nAOgsmdmsrF3mokkFphCizZlQqhKHDMhDOp8LPRKtdsO0mEfNnypL20bcSoph\nsOUg\r\n=Cnt8\r\n-----END PGP SIGNATURE-----\r\n"
+			}
+		}
+	},
+	"modified": "2021-12-21T19:53:07.844Z",
+	"cachedAt": 1640454815399
+}
