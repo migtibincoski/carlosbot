@@ -21,14 +21,12 @@ const client = new Discord.Client({
   ],
 
   partials: ["MESSAGE", "CHANNEL", "REACTION", "USER"]
-});
+})//;
 
-const moment = require("moment");
-const AsciiTable = require("ascii-table");
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
-client.db = require("quick.db");
-client.prefix = "j.";
+client.db = require("simple-json-db");
+client.prefix = ".";
 
 // inicialização
 client.on("ready", () => {
@@ -284,14 +282,14 @@ app.get("/dashboard", async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    res.redirect("https://junibot.izemlab.repl.co/login");
+    res.redirect("https://carlosbot.miguel-tibincoski.repl.co/login");
   }
 });
 
 app.get("/dashboard/:id", async (req, res) => {
   let guild = client.guilds.cache.get(req.params.id);
   if (!guild) {
-    res.redirect("https://junibot.izemlab.repl.co/dashboard");
+    res.redirect("https://carlosbot.miguel-tibincoski.repl.co/dashboard");
   } else {
     res.render("guild.ejs", {
       client: client,
@@ -315,7 +313,7 @@ app.get("/addbot", async (req, res) => {
 app.get("/login", async (req, res) => res.redirect(oauthSettings.oauthUri));
 
 app.get("/support", async (req, res) =>
-  res.redirect("https://dsc.gg/izem-lab")
+  res.redirect("https://dsc.gg/")
 );
 
 app.get("/invite", async (req, res) => res.redirect(oauthSettings.botOauthUri));
