@@ -27,6 +27,7 @@ client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
 client.db = require("simple-json-db");
 client.prefix = ".";
+const AsciiTable = require("ascii-table")
 
 // inicialização
 client.on("ready", () => {
@@ -219,13 +220,13 @@ const oauth2 = require("discord-oauth2");
 const session = require("express-session");
 //app.listen(8080, () => console.log("Server Started!"));
 const oauthSettings = {
-  clientId: "831137997545275472",
-  clientSecret: process.env.clientSecret,
+  clientId: process.env.DISCORD_BOT_ID,
+  secret: process.env.DISCORD_BOT_SECRET,
   oauthUri:
-    "https://discord.com/oauth2/authorize?client_id=831137997545275472&redirect_uri=https://junibot.izemlab.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none",
+    `https://discord.com/oauth2/authorize?client_id=${process.env.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
   botOauthUri:
-    "https://discord.com/oauth2/authorize?client_id=831137997545275472&redirect_uri=https://junibot.izemlab.repl.co/auth&response_type=code&scope=identify guilds guilds.join bot applications.commands",
-  redirectUri: "https://junibot.izemlab.repl.co/auth"
+    "  guilds guilds.join bot applications.commands",
+  redirectUri: `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth`
 };
 const oauth = new oauth2(oauthSettings);
 
@@ -234,8 +235,9 @@ app.set("view engine", "ejs");
 app.use(express.static("src"));
 app.use(
   session({
-    secret: process.env["sessionSecret"],
-    resave: false,
+    secret: process.env.EXPRESS_SESSION_SECRET,
+   
+     resave: false,
     saveUninitialized: false
   })
 );
@@ -250,6 +252,8 @@ app.use(async (req, res, next) => {
   next();
 });
 app.set("trust proxy", 1);
+
+app.get("/*", (req, res) => res.send("404 - Essa página não pôde ser encontrada!"))
 
 app.get("/", async (req, res) => {
   if (req.session["discordkey"] !== undefined) {
@@ -349,4 +353,4 @@ app.get("/auth", async (req, res) => {
   }
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_BOT_TOKEN);
