@@ -21,15 +21,20 @@ const client = new Discord.Client({
   ],
 
   partials: ["MESSAGE", "CHANNEL", "REACTION", "USER"]
-})//;
+})
 
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
-client.db = require("simple-json-db");
+const database = require("simple-json-db")
+client.db = new database("database.json")
 client.prefix = ".";
 const AsciiTable = require("ascii-table")
 
-// inicialização
+let bot = {}; 
+const webdata = {
+  navbar: ``
+}
+//nicialização
 client.on("ready", () => {
   const commandFiles = fs
     .readdirSync("./commands")
@@ -46,8 +51,8 @@ client.on("ready", () => {
   let activities = [
     "Use " + client.prefix + "help para obter ajuda!",
     "Eu sou um excelente bot de diversão e moderação pro seu servidor, sabia? Me adicione com " +
-      client.prefix +
-      "invite !",
+    client.prefix +
+    "invite !",
     "Você sabia que eu estou em constantes atualizações?"
   ];
   let types = ["PLAYING", "WATCHING", "LISTENING"];
@@ -58,6 +63,8 @@ client.on("ready", () => {
       type: `${types[numero] || "PLAYING"}`
     });
   }, 60000);
+
+  bot = client.user;
   
   app.listen(8000, servidor =>
     console.log(
@@ -67,9 +74,9 @@ client.on("ready", () => {
   );
   client.on("debug", data =>
 
-  client.channels.cache.get("924732014270218341").send(data)
+    client.channels.cache.get("924732014270218341").send(data)
 
-);
+  );
 });
 
 client.on("guildCreate", guild =>
@@ -78,12 +85,13 @@ client.on("guildCreate", guild =>
 
 client.on("messageCreate", async message => {
   // console.log("New message!")
+  
   if (message.author.bot) return;
   if (!message.guild)
     return message.reply(
       "Eu não posso executar comands via mensagem direta (DM)!"
     );
-  if (client.db.get(message.guild.id + "_inviteBlocker") == "on") {
+  if (client.db.get(message.guild.id + "_inviteBlocker") == true) {
     const regex = /(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li|club)|discordapp\.com\/invite|discord\.com\/invite|dsc.gg)\/.+[a-z]/gi;
     if (regex.exec(message.content)) {
       message.reply(`**você não pode postar link de outros servidores aqui!**`);
@@ -119,10 +127,10 @@ client.on("messageCreate", async message => {
     if (!authorPerms || !authorPerms.has(command.permissions))
       return message.reply(
         "você não tem as permissões necessárias! Permissões necessárias: \n`" +
-          command.permissions
-            .join("`, `")
-            .replace("MANAGE_GUILD", "Gerenciar Servidor") +
-          "`"
+        command.permissions
+          .join("`, `")
+          .replace("MANAGE_GUILD", "Gerenciar Servidor") +
+        "`"
       );
   }
   if (command.args && !args.length) {
@@ -161,8 +169,8 @@ client.on("interactionCreate", async interaction => {
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-            err +
-            "```"
+          err +
+          "```"
         );
       }
     } else if (interaction.isSelectMenu()) {
@@ -176,8 +184,8 @@ client.on("interactionCreate", async interaction => {
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-            err +
-            "```"
+          err +
+          "```"
         );
       }
     } else if (interaction.isCommand()) {
@@ -191,8 +199,8 @@ client.on("interactionCreate", async interaction => {
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-            err +
-            "```"
+          err +
+          "```"
         );
       }
     } else {
@@ -207,8 +215,8 @@ client.on("interactionCreate", async interaction => {
       client,
       interaction,
       "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-        err +
-        "```"
+      err +
+      "```"
     );
   }
 });
@@ -221,11 +229,11 @@ const session = require("express-session");
 //app.listen(8080, () => console.log("Server Started!"));
 const oauthSettings = {
   clientId: process.env.DISCORD_BOT_ID,
-  secret: process.env.DISCORD_BOT_SECRET,
+  clientSecret: process.env.DISCORD_BOT_SECRET,
   oauthUri:
     `https://discord.com/oauth2/authorize?client_id=${process.env.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
   botOauthUri:
-    "  guilds guilds.join bot applications.commands",
+    " guilds guilds.join bot applications.commands",
   redirectUri: `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth`
 };
 const oauth = new oauth2(oauthSettings);
@@ -236,15 +244,12 @@ app.use(express.static("src"));
 app.use(
   session({
     secret: process.env.EXPRESS_SESSION_SECRET,
-   
-     resave: false,
+
+    resave: false,
     saveUninitialized: false
   })
 );
 app.use(async (req, res, next) => {
-  if (req.url.includes("/auth")) {
-    return next();
-  }
   if (req.url.startsWith("/dashboard") || req.url.startsWith("/profile")) {
     if (!req.session.discordkey && !req.query.code)
       return res.redirect(oauthSettings.redirectUri);
@@ -253,18 +258,20 @@ app.use(async (req, res, next) => {
 });
 app.set("trust proxy", 1);
 
-app.get("/*", (req, res) => res.send("404 - Essa página não pôde ser encontrada!"))
 
 app.get("/", async (req, res) => {
   if (req.session["discordkey"] !== undefined) {
     res.render("index.ejs", {
       client: client,
-      user: await oauth.getUser(req.session["discordkey"])
+      user: await oauth.getUser(req.session["discordkey"]),
+      data: webdata
+      
     });
   } else {
     res.render("index.ejs", {
       client: client,
-      user: undefined
+      user: undefined,
+      data: webdata
     });
   }
 });
@@ -310,6 +317,13 @@ app.get("/profile", async (req, res) => {
   });
 });
 
+app.get("/profile/logout", async (req, res) => {
+  if(req.session.discordkey != undefined){
+    req.session.discordkey = undefined;
+  }
+  res.redirect("https://carlosbot.miguel-tibincoski.repl.co/")
+});
+
 app.get("/addbot", async (req, res) => {
   res.render("addbot.ejs");
 });
@@ -348,9 +362,14 @@ app.get("/auth", async (req, res) => {
     } else {
       return res.redirect(oauthSettings.oauthUri);
     }
-  } catch {
+  } catch (error) {
+
+    console.log(error)
     return res.redirect(oauthSettings.oauthUri);
   }
 });
+
+app.get("*", (req, res) =>
+  res.redirect("https://carlosbot.miguel-tibincoski.repl.co/"))
 
 client.login(process.env.DISCORD_BOT_TOKEN);

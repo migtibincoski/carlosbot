@@ -39,6 +39,6 @@
   max-width: 186px;
   display: inline-block;
 }
-a.btn.btn-login:hover{
-  color: white;
+a.btn.btn-login.btn-outline-primary.my-2.my-sm-0:hover{
+  color: white !important;
 }

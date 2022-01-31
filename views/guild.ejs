@@ -6,7 +6,7 @@
     <title>Juni Bot | Dashboard</title>
 
     <!--- MetaDatas --->
-    <base href="https://junibot.izemlab.repl.co/">
+    <base href="https://carlosbot.miguel-tibincoski.repl.co/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- JavaScript -->
@@ -53,7 +53,7 @@
   <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="./"><i class="fas fa-home"></i> Home <span class="sr-only">(Página atual)</span></a>
+        <a class="nav-link active" href="./"><i class="fas fa-home"></i> Home <span class="sr-only">(Página atual)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./commands"><i class="fas fa-terminal"></i> Comandos</a>
@@ -64,15 +64,10 @@
       <li class="nav-item">
         <a class="nav-link" href="./invite"><i class="fas fa-plus"></i> Adicionar o Bot</a>
       </li>
-      <% if(user != undefined && user.username){ %>
-      <li class="nav-item">
-        <a class="nav-link active" href="./dashboard"><i class="fas fa-cogs"></i> Dashboard</a>
-      </li>
-      <% } %>
     </ul>
     <div class="form-inline my-2 my-lg-0">
     <% if(user != undefined && user.username){ %>
-        <a class="btn btn-login btn-outline-primary my-2 my-sm-0"><i class="fas fa-user"></i> <%= user.username %></a>
+        <a class="btn btn-login btn-outline-primary my-2 my-sm-0" href="./dashboard"><i class="fas fa-user"></i> <%= user.username %></a>
       <% } else { %>
         <a class="btn btn-login btn-outline-primary my-2 my-sm-0" href="./login"><i class="fas fa-sign-in-alt"></i> Login</a>
       <% } %>
@@ -91,7 +86,7 @@
     <form>
       <div class="form-group">
         <label for="inputPrefix">Prefixo no Servidor</label>
-        <input type="text" class="form-control" id="inputPrefix" placeholder="Password">
+        <input type="text" class="form-control" id="inputPrefix" placeholder="Prefixo" autocomplete="off">
       </div>
       <button type="submit" class="btn btn-primary">Salvar</button>
     </form>

@@ -3,10 +3,9 @@
 
 <head>
 <meta charset="UTF-8">
-    <title>Juni Bot | Home</title>
+    <title><%= client.user.username %> | Home</title>
 
     <!--- MetaDatas --->
-    <base href="https://junibot.izemlab.repl.co/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="manifest" href="../manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +46,8 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="./"><img src="./img/favicon.png" class="logo" alt="Avatar do Juni" title="Avatar do Juni">  Juni Bot</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./"><img src="./img/favicon.png" class="logo" alt="Avatar do <%= client.user.username %>" title="Avatar do <%= client.user.username %>">  <%= client.user.username %></a>
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
     <span class="btn-toggle-navbar"><i class="fas fa-bars"></i></span>
   </button>
@@ -67,21 +66,17 @@
       <li class="nav-item">
         <a class="nav-link" href="./invite"><i class="fas fa-plus"></i> Adicionar o Bot</a>
       </li>
-      <% if(user != undefined && user.username){ %>
-      <li class="nav-item">
-        <a class="nav-link" href="./dashboard"><i class="fas fa-cogs"></i> Dashboard</a>
-      </li>
-      <% } %>
     </ul>
     <div class="form-inline my-2 my-lg-0">
     <% if(user != undefined && user.username){ %>
-        <a class="btn btn-login btn-outline-primary my-2 my-sm-0"><i class="fas fa-user"></i> <%= user.username %></a>
+        <a class="btn btn-login btn-outline-primary my-2 my-sm-0" href="./dashboard"><i class="fas fa-user"></i> <%= user.username %></a>
       <% } else { %>
         <a class="btn btn-login btn-outline-primary my-2 my-sm-0" href="./login"><i class="fas fa-sign-in-alt"></i> Login</a>
       <% } %>
     </div>
   </div>
-</nav>
+      </nav>
+  </nav>
 
 <div class="presentation">
   <img src="https://cdn.discordapp.com/attachments/876824295471448084/901592261467467786/unknown.png" class="img-fluid" alt="..." />
@@ -97,6 +92,10 @@
     A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
   </p>
 </div>
+
+  <script>
+    document.querySelector(".navbar").innerHTML(`<% data.navbar %>`)
+  </script>
 </body>
 
 </html>

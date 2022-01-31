@@ -75,37 +75,37 @@ module.exports = {
 							label: 'Diversão',
 							description: 'Veja alguns comandos pra rir e jogar mini-games!',
 							value: 'help_fun',
-              emoji: '877585213625073745'
+              emoji: "🎉"
 						},
 						{
 							label: 'Economia',
 							description: 'This is also a description',
 							value: 'help_economia',
-              emoji: '905504146994651186'
+              emoji: '💲'
 						},
 						{
 							label: 'Moderação',
 							description: 'This is also a description',
 							value: 'help_moderacao',
-              emoji: '905505175521857546'
+              emoji: '🔨'
 						},
 						{
 							label: 'Informação',
 							description: 'This is also a description',
 							value: 'help_info',
-              emoji: '905504146994651186'
+              emoji: 'ℹ️'
 						},
 						{
 							label: 'Configuração',
 							description: 'This is also a description',
 							value: 'help_config',
-              emoji: '905506560598507600'
+              emoji: '⚙️'
 						},
 						{
 							label: 'Miscelânea (outros)',
 							description: 'This is also a description',
 							value: 'help_other',
-              emoji: '905508219798052925'
+              emoji: '🔁'
 						}
 					]),
 			);

@@ -16,7 +16,8 @@
 .presentation img.juni {
   position: absolute;
   z-index: 1;
-  margin-left: 95px;
+  
+  float: right;
   height: -webkit-fill-available;
 }
 .presentation .discover p, .presentation .discover{
