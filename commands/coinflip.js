@@ -7,13 +7,13 @@ module.exports = {
 	description: 'Jogue Cara ou Coroa, perfeito se você não tiver uma moeda!',
 	run: async (client, message, args) => {
 		const cara = new Discord.MessageButton()
-			.setID('coinflip_cara')
+			.setCustomId('coinflip_cara')
 			.setStyle('blurple')
 			.setLabel('Cara')
 			.setEmoji('🙂');
 
 		const coroa = new Discord.MessageButton()
-			.setID('coinflip_coroa')
+			.setCustomId('coinflip_coroa')
 			.setStyle('blurple')
 			.setLabel('Coroa')
 			.setEmoji('👑');

@@ -34,7 +34,7 @@ module.exports = {
 			.addField('Tempo de Uptime', uptime, inline)
 			.addField('Criado em', '12 de abril de 2021, às 12:05', inline)
 			.addField('Quantidade de Comandos', `${client.commands.size} comandos no total`, inline)
-			.addField("Dados Extras", "<:js_icon:905462630792171590> Livraria: `discord.js`\n<:nodejs_icon:905464976943226960> Linguagem: `JavaScript for Node.js`\n<:host_icon:905465619640647711> Host: [Replit.com](https://replit.com)\n<a:discord_animated_icon:905467261383487568> Link do meu Servidor: https://dsc.gg/izem-lab ou https://discord.gg/CrddPUFF8e")
+			.addField("Dados Extras", "<:js_icon:905462630792171590> Livraria: `discord.js`\n<:nodejs_icon:905464976943226960> Linguagem: `JavaScript for Node.js`\n<:host_icon:905465619640647711> Host: [Replit.com](https://replit.com)\n<a:discord_animated_icon:905467261383487568> Link do meu Servidor: https://dsc.gg/izem-lab ou https://discord.gg/ballerini")
       .setTimestamp();
 		message.channel.send({ content: " ", embeds: [embed] });
 	}

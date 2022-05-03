@@ -1,4 +1,5 @@
 module.exports = {
-  formatDate: require("./functions/formatdate.js"),
-  filterByCategory: require("./functions/filterCmdsByCategory.js")
+  formatDate: require("./functions/formatdate"),
+  filterByCategory: require("./functions/filterCmdsByCategory"),
+  sendConsole: require("./functions/console")
 }

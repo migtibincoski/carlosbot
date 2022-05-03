@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "ascii-table": "0.0.9",
-    "better-sqlite3": "^7.4.6",
     "canvacord": "^5.2.3",
     "canvas": "^2.8.0",
     "dateformat": "^5.0.2",
@@ -14,12 +12,15 @@
     "express": "^4.17.2",
     "express-session": "^1.17.2",
     "figlet": "^1.5.2",
+    "firebase-admin": "^10.0.2",
+    "keyv": "^4.1.1",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.2.3",
     "ms": "^2.1.3",
     "nampis": "^1.1.9",
-    "quick.db": "^7.1.3",
-    "simple-json-db": "^1.2.3"
+    "node-fetch": "^3.2.0",
+    "songlyrics": "^2.2.4"
   },
   "engines": {
     "node": "16.x"
@@ -28,18 +29,11 @@
     "start": "node ."
   },
   "keywords": [],
-  "author": "@izemlab",
-  "license": "ISC",
+  "author": "@MigPlayer6032",
+  "license": "MIT",
   "devDependencies": {
     "node": "^16.13.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MigPlayer6032/carlosbot.git"
-  },
-  "bugs": {
-    "url": "https://github.com/MigPlayer6032/carlosbot/issues"
-  },
-  "homepage": "https://github.com/MigPlayer6032/carlosbot#readme",
+  "homepage": "https://carlosbot.miguel-tibincoski.repl.co/",
   "description": ""
 }

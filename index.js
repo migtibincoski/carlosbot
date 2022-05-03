@@ -1,6 +1,8 @@
-// declarações de variável
 const fs = require("fs");
 const Discord = require("discord.js");
+
+const utils = require("./utils/autoload")
+utils.sendConsole("---------------------------------------------\n> Iniciando o Processo...").then()
 const client = new Discord.Client({
   intents: [
     Discord.Intents.FLAGS.GUILDS,
@@ -14,10 +16,7 @@ const client = new Discord.Client({
     Discord.Intents.FLAGS.GUILD_PRESENCES,
     Discord.Intents.FLAGS.GUILD_MESSAGES,
     Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-    Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
     Discord.Intents.FLAGS.DIRECT_MESSAGES,
-    Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
-    Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
   ],
 
   partials: ["MESSAGE", "CHANNEL", "REACTION", "USER"]
@@ -25,28 +24,18 @@ const client = new Discord.Client({
 
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
-const database = require("simple-json-db")
-client.db = new database("database.json")
 client.prefix = ".";
-const AsciiTable = require("ascii-table")
-
-let bot = {}; 
-const webdata = {
-  navbar: ``
-}
 //nicialização
-client.on("ready", () => {
+client.on("ready", async () => {
+  await utils.sendConsole("**>> Cliente (BOT) Iniciado!**")
   const commandFiles = fs
     .readdirSync("./commands")
     .filter(file => file.endsWith(".js"));
-  const table = new AsciiTable("Carregamento dos Arquivos");
-  table.setHeading("Nome e Extensão do Arquivo", "Status");
   for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
-    table.addRow(`${file}`, `✅`);
-  }
-  console.log(table.toString());
+    (`${file}`, `✅`);
+  };
 
   let activities = [
     "Use " + client.prefix + "help para obter ajuda!",
@@ -65,39 +54,30 @@ client.on("ready", () => {
   }, 60000);
 
   bot = client.user;
-  
-  app.listen(8000, servidor =>
-    console.log(
-      "READY!",
-      "Servidor Web iniciado"
-    )
-  );
-  client.on("debug", data =>
 
-    client.channels.cache.get("924732014270218341").send(data)
 
-  );
+  app.listen(8000, async () => {
+    console.log("Servidor Web Iniciado")
+    await utils.sendConsole("**>> Servidor Web Iniciado!**")
+  });
+
 });
-
-client.on("guildCreate", guild =>
-  console.log(`Fui adicionado em ${guild.name || "undefined"}`)
-);
+client.on("debug", async data => await utils.sendConsole(data))
+client.on("guildCreate", async guild => await utils.sendConsole(`Fui adicionado em ${guild.name || "undefined"}`));
 
 client.on("messageCreate", async message => {
-  // console.log("New message!")
-  
   if (message.author.bot) return;
   if (!message.guild)
     return message.reply(
       "Eu não posso executar comands via mensagem direta (DM)!"
     );
-  if (client.db.get(message.guild.id + "_inviteBlocker") == true) {
-    const regex = /(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li|club)|discordapp\.com\/invite|discord\.com\/invite|dsc.gg)\/.+[a-z]/gi;
-    if (regex.exec(message.content)) {
-      message.reply(`**você não pode postar link de outros servidores aqui!**`);
-      return message.delete();
-    }
-  }
+  // if (client.db.get(message.guild.id + "_inviteBlocker") == true) {
+  //     const regex = /(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li|club)|discordapp\.com\/invite|discord\.com\/invite|dsc.gg)\/.+[a-z]/gi;
+  //     if (regex.exec(message.content)) {
+  //         message.reply(`**você não pode postar link de outros servidores aqui!**`);
+  //         return message.delete();
+  //     }
+  // }
 
   if (
     message.content.startsWith("<@" + client.user.id + ">") ||
@@ -128,8 +108,7 @@ client.on("messageCreate", async message => {
       return message.reply(
         "você não tem as permissões necessárias! Permissões necessárias: \n`" +
         command.permissions
-          .join("`, `")
-          .replace("MANAGE_GUILD", "Gerenciar Servidor") +
+          .join("`, `").replace("CREATE_INSTANT_INVITE", "Criar Convite Instantâneo").replace("KICK_MEMBERS", "Expulsar Membros").replace("BAN_MEMBERS", "Banir Membros").replace("ADMINISTRATOR", "Administrador").replace("MANAGE_CHANNELS", "Gerenciar Canais").replace("MANAGE_GUILD", "Gerenciar Servidor").replace("ADD_REACTIONS", "Adicionar Reações").replace("VIEW_AUDIT_LOG", "Ver Registro de Auditoria").replace("PRIORITY_SPEAKER", "Voz Prioritária").replace("STREAM", "Compartilhar Tela").replace("VIEW_CHANNEL", "Ver Canais").replace("SEND_MESSAGES", "Enviar Mensagens").replace("SEND_TTS_MESSAGES", "Enviar Mensagens TTS (Texto Para Voz)").replace("MANAGE_MESSAGES", "Gerenciar Mensagens").replace("EMBED_LINKS", "Incorporar Links").replace("ATTACH_FILES", "Enviar Arquivos").replace("READ_MESSAGE_HISTORY", "Ler Histórico de Mensagens").replace("MENTION_EVERYONE", "Mencionar Todos (Usar @everyone)").replace("USE_EXTERNAL_EMOJIS", "Usar Emojis Externos").replace("VIEW_GUILD_INSIGHTS", "Ver Insigths do Servidor").replace("CONNECT", "Conectar").replace("SPEAK", "Falar").replace("MUTE_MEMBERS", "Mutar Membros").replace("DEAFEN_MEMBERS", "Ensurdecer Membros").replace("MOVE_MEMBERS", "Mover Membros").replace("USE_VAD", "Usar Detecção de Atividade de Voz (VAD)").replace("CHANGE_NICKNAME", "Alterar o Próprio Apelido").replace("MANAGE_NICKNAMES", "Gerenciar Apelidos").replace("MANAGE_ROLES", "Gerenciar Cargos").replace("MANAGE_WEBHOOKS", "Gerenciar WebHooks").replace("MANAGE_EMOJIS_AND_STICKERS", "Gerenciar Emojis e Figurinhas do Servidor").replace("USE_APPLICATION_COMMANDS", "Usar Comandos de Aplicação (botões, Slash Commands, menus, etc)").replace("REQUEST_TO_SPEAK", "Pedir para Falar em Canais de Palco").replace("MANAGE_EVENTS", "Gerenciar Eventos").replace("MANAGE_THREADS", "Gerenciar Threads").replace("USE_PUBLIC_THREADS", "Usar Threads Públicas").replace("CREATE_PUBLIC_THREADS", "Criar Threads Públicas").replace("USE_PRIVATE_THREADS", "Usar Threads Privadas").replace("CREATE_PRIVATE_THREADS", "Criar Threads Privadas").replace("USE_EXTERNAL_STICKERS", "Usar Figurinhas Externas").replace("SEND_MESSAGES_IN_THREADS", "Enviar Mensagens em Threads").replace("START_EMBEDDED_ACTIVITIES", "Iniciar Atividades Incorporadas").replace("MODERATE_MEMBERS", "Moderar Membros") +
         "`"
       );
   }
@@ -150,8 +129,7 @@ client.on("messageCreate", async message => {
       content: `Ei! Um usuário foi executar o comando ${commandName},  que retornou um erro! Erro: \`\`\`${error}\`\`\``
     });
     message.reply({
-      content:
-        "Ocorreu um erro ao executar este comando! Mas não se preocupe que o erro logo será resolvido!"
+      content: "Ocorreu um erro ao executar este comando! Mas não se preocupe que o erro logo será resolvido!"
     });
   }
 });
@@ -226,15 +204,13 @@ const express = require("express");
 const app = express();
 const oauth2 = require("discord-oauth2");
 const session = require("express-session");
-//app.listen(8080, () => console.log("Server Started!"));
 const oauthSettings = {
   clientId: process.env.DISCORD_BOT_ID,
   clientSecret: process.env.DISCORD_BOT_SECRET,
-  oauthUri:
-    `https://discord.com/oauth2/authorize?client_id=${process.env.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
-  botOauthUri:
-    " guilds guilds.join bot applications.commands",
-  redirectUri: `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co/auth`
+  oauthUri: `https://discord.com/oauth2/authorize?client_id=${process.env.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
+  botOauthUri: " guilds guilds.join bot applications.commands",
+  redirectUri: `https://carlosbot.miguel-tibincoski.repl.co/auth`,
+  domain: "https://carlosbot.miguel-tibincoski.repl.co/"
 };
 const oauth = new oauth2(oauthSettings);
 
@@ -244,7 +220,6 @@ app.use(express.static("src"));
 app.use(
   session({
     secret: process.env.EXPRESS_SESSION_SECRET,
-
     resave: false,
     saveUninitialized: false
   })
@@ -263,15 +238,12 @@ app.get("/", async (req, res) => {
   if (req.session["discordkey"] !== undefined) {
     res.render("index.ejs", {
       client: client,
-      user: await oauth.getUser(req.session["discordkey"]),
-      data: webdata
-      
+      user: await oauth.getUser(req.session["discordkey"])
     });
   } else {
     res.render("index.ejs", {
       client: client,
-      user: undefined,
-      data: webdata
+      user: undefined
     });
   }
 });
@@ -318,7 +290,7 @@ app.get("/profile", async (req, res) => {
 });
 
 app.get("/profile/logout", async (req, res) => {
-  if(req.session.discordkey != undefined){
+  if (req.session.discordkey != undefined) {
     req.session.discordkey = undefined;
   }
   res.redirect("https://carlosbot.miguel-tibincoski.repl.co/")
@@ -331,8 +303,7 @@ app.get("/addbot", async (req, res) => {
 app.get("/login", async (req, res) => res.redirect(oauthSettings.oauthUri));
 
 app.get("/support", async (req, res) =>
-  res.redirect("https://dsc.gg/")
-);
+  res.redirect("https://dsc.gg/"));
 
 app.get("/invite", async (req, res) => res.redirect(oauthSettings.botOauthUri));
 
@@ -340,10 +311,16 @@ app.get("/commands", async (req, res) => {
   let sessao = await oauth
     .getUser(req.session["discordkey"])
     .then(() =>
-      res.render("commands.ejs", { commands: client.commands, user: sessao })
+      res.render("commands.ejs", {
+        commands: client.commands,
+        user: sessao
+      })
     )
     .catch(err =>
-      res.render("commands.ejs", { commands: client.commands, user: undefined })
+      res.render("commands.ejs", {
+        commands: client.commands,
+        user: undefined
+      })
     );
 });
 
@@ -369,7 +346,6 @@ app.get("/auth", async (req, res) => {
   }
 });
 
-app.get("*", (req, res) =>
-  res.redirect("https://carlosbot.miguel-tibincoski.repl.co/"))
+app.get("*", ({ res }) => res.status(404).send('Sorry cant find that!'))
 
 client.login(process.env.DISCORD_BOT_TOKEN);
