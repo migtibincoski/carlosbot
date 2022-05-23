@@ -1,3 +1,4 @@
+const config = require("./config.json")
 const fs = require("fs");
 const Discord = require("discord.js");
 
@@ -205,9 +206,9 @@ const app = express();
 const oauth2 = require("discord-oauth2");
 const session = require("express-session");
 const oauthSettings = {
-  clientId: process.env.DISCORD_BOT_ID,
-  clientSecret: process.env.DISCORD_BOT_SECRET,
-  oauthUri: `https://discord.com/oauth2/authorize?client_id=${process.env.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
+  clientId: config.DISCORD_BOT_ID,
+  clientSecret: config.DISCORD_BOT_SECRET,
+  oauthUri: `https://discord.com/oauth2/authorize?client_id=${config.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
   botOauthUri: " guilds guilds.join bot applications.commands",
   redirectUri: `https://carlosbot.miguel-tibincoski.repl.co/auth`,
   domain: "https://carlosbot.miguel-tibincoski.repl.co/"
@@ -219,7 +220,7 @@ app.set("view engine", "ejs");
 app.use(express.static("src"));
 app.use(
   session({
-    secret: process.env.EXPRESS_SESSION_SECRET,
+    secret: config.EXPRESS_SESSION_SECRET,
     resave: false,
     saveUninitialized: false
   })
@@ -348,4 +349,4 @@ app.get("/auth", async (req, res) => {
 
 app.get("*", ({ res }) => res.status(404).send('Sorry cant find that!'))
 
-client.login(process.env.DISCORD_BOT_TOKEN);
+client.login(config.DISCORD_BOT_TOKEN);

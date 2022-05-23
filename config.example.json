@@ -1,0 +1,6 @@
+{ 
+    "DISCORD_BOT_TOKEN":"<your bot token>",
+    "DISCORD_BOT_ID":"<your bot oauth2 id>",
+    "DISCORD_BOT_SECRET":"<your bot oauth2 secret>",
+    "EXPRESS_SESSION_SECRET":"<your express session secret>"
+}

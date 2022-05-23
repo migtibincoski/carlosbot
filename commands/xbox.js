@@ -4,7 +4,7 @@ const nampis = require('nampis');
 module.exports = {
 	name: 'conquista-xbox',
 	description:
-		'<:xbox_one:869576098646741052> Obtenha uma imagem de uma conquista do Xbox que você pode personalizar!',
+		'Obtenha uma imagem de uma conquista do Xbox que você pode personalizar!',
 	aliases: ['xbox-conquista', 'xbox'],
 	args: true,
 	usage: '<descrição da sua conquista do Xbox>',
