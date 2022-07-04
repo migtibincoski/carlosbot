@@ -1,16 +1,15 @@
 const fetch = require("superagent")
 
 module.exports = async (message) => {
-	fetch.post("https://discord.com/api/webhooks/976591672131608576/vAHtaJaCZ_OZFd7cNcQTptiuL5QloAO_89jLlY_YNZEn8w6CvUbeSYW1GHhzHiopk-BI")
+	fetch.post("https://discord.com/api/webhooks/979935079604289606/egilrYEa9rdgN4YyrQRmXcLaqYM_t9D42Nx0TxFpcZteOC1mQ9BXEItAn9Ji-BHLRvTE")
 	.send({
 			content: message,
-			avatar: "",
-			username: "🪰 Carlos Bot - Debug"
+			avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG0e6WXDTveQMhJ7CRce-JUkx8S_ZLTWsjrg&usqp=CAU", 
+			username: "⚠️ Carlos Bot - Debug"
 		})
-		.end((err, res) => {
+		.end((error, response) => {
 			return {
-				error: err,
-				response: res,
+				error, response
 			}
 		  });
 }

@@ -1,2 +1,7 @@
 .pnpm-store/
 node_modules/
+.idea/
+.vscode/
+
+package-lock.json
+yarn.lock

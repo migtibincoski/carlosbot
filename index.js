@@ -1,9 +1,19 @@
+// Setup do node:events
+const EventEmitter = require('node:events');
+class myEmmiter extends EventEmitter {}
+const events = new myEmmiter();
+events.on('event', (error) => {
+  console.error(error)
+  utils.sendConsole(error)
+});
+
+
 const config = require("./config.json")
 const fs = require("fs");
 const Discord = require("discord.js");
 
 const utils = require("./utils/autoload")
-utils.sendConsole("---------------------------------------------\n> Iniciando o Processo...").then()
+utils.sendConsole("--------------------------------------------------\n> > **__Iniciando o processo...__**")
 const client = new Discord.Client({
   intents: [
     Discord.Intents.FLAGS.GUILDS,
@@ -28,16 +38,15 @@ client.cooldowns = new Discord.Collection();
 client.prefix = ".";
 //nicialização
 client.on("ready", async () => {
-  await utils.sendConsole("**>> Cliente (BOT) Iniciado!**")
   const commandFiles = fs
-    .readdirSync("./commands")
-    .filter(file => file.endsWith(".js"));
+  .readdirSync("./commands")
+  .filter(file => file.endsWith(".js"));
   for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
     (`${file}`, `✅`);
   };
-
+  
   let activities = [
     "Use " + client.prefix + "help para obter ajuda!",
     "Eu sou um excelente bot de diversão e moderação pro seu servidor, sabia? Me adicione com " +
@@ -53,17 +62,22 @@ client.on("ready", async () => {
       type: `${types[numero] || "PLAYING"}`
     });
   }, 60000);
-
+  
   bot = client.user;
-
-
-  app.listen(8000, async () => {
+  
+  
+  console.info("Cliente (BOT) Iniciado!")
+  await utils.sendConsole("**>> Cliente (BOT) Iniciado!**")
+  app.listen(process.env.port || 8000, async () => {
     console.log("Servidor Web Iniciado")
     await utils.sendConsole("**>> Servidor Web Iniciado!**")
   });
-
+  
 });
-client.on("debug", async data => await utils.sendConsole(data))
+client.on("debug", async data => {
+  if (/(Sending a heartbeat|Latency of)/i.test(data)) return null;
+  await utils.sendConsole(data)
+})
 client.on("guildCreate", async guild => await utils.sendConsole(`Fui adicionado em ${guild.name || "undefined"}`));
 
 client.on("messageCreate", async message => {
@@ -123,7 +137,7 @@ client.on("messageCreate", async message => {
 
   try {
     command.run(client, message, args);
-    console.log(`Comando ${command.name} executado em ${message.guild.name}`);
+    console.info(`Comando ${command.name} executado em ${message.guild.name}`);
   } catch (error) {
     console.error(error);
     client.channels.cache.get("866438231033118720").send({
@@ -205,13 +219,14 @@ const express = require("express");
 const app = express();
 const oauth2 = require("discord-oauth2");
 const session = require("express-session");
+
 const oauthSettings = {
   clientId: config.DISCORD_BOT_ID,
   clientSecret: config.DISCORD_BOT_SECRET,
-  oauthUri: `https://discord.com/oauth2/authorize?client_id=${config.DISCORD_BOT_ID}&redirect_uri=https://carlosbot.miguel-tibincoski.repl.co/auth&response_type=code&scope=identify guilds guilds.join&prompt=none`,
-  botOauthUri: " guilds guilds.join bot applications.commands",
-  redirectUri: `https://carlosbot.miguel-tibincoski.repl.co/auth`,
-  domain: "https://carlosbot.miguel-tibincoski.repl.co/"
+  oauthUri: `https://discord.com/oauth2/authorize?client_id=${config.DISCORD_BOT_ID}&redirect_uri=${config.DOMAIN}/auth&response_type=code&scope=identify%20guilds%20guilds.join&prompt=none`,
+  inviteUri: `https://discord.com/api/oauth2/authorize?client_id=${config.DISCORD_BOT_ID}&permissions=8&redirect_uri=${config.DOMAIN}/auth&response_type=code&scopes=bot%20applications.commands`,
+  redirectUri: `${config.DOMAIN}/auth`,
+  domain: config.DOMAIN
 };
 const oauth = new oauth2(oauthSettings);
 
@@ -230,55 +245,64 @@ app.use(async (req, res, next) => {
     if (!req.session.discordkey && !req.query.code)
       return res.redirect(oauthSettings.redirectUri);
   }
+
+  /*let user = (await oauth.getUser(req.session['discordkey'])) || undefined
+  user !== undefined ? user.avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` : undefined
+  req.user = user;*/
   next();
 });
 app.set("trust proxy", 1);
 
 
 app.get("/", async (req, res) => {
-  if (req.session["discordkey"] !== undefined) {
     res.render("index.ejs", {
-      client: client,
-      user: await oauth.getUser(req.session["discordkey"])
-    });
-  } else {
-    res.render("index.ejs", {
-      client: client,
-      user: undefined
-    });
-  }
+     // client: client,
+      user: req.user
+    })
 });
 
 app.get("/dashboard", async (req, res) => {
   try {
-    let guildas = [];
+    let guilds = [];
     const allServers = await oauth.getUserGuilds(req.session["discordkey"]);
     for (const servidor of allServers) {
       let mutualServer = client.guilds.cache.get(servidor.id);
       if (mutualServer) {
-        guildas.push(servidor);
+        guilds.push(servidor);
       }
     }
+    let user = await oauth.getUser(req.session['discordkey'])
+    user.avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
     res.render("dashboard.ejs", {
       client: client,
-      user: await oauth.getUser(req.session["discordkey"]),
-      guilds: guildas
+      user,
+      guilds,
+      siteData: {
+        domain: config.DOMAIN,
+        bot: client.user,
+        sessionSecret: config.EXPRESS_SESSION_SECRET
+      }
     });
   } catch (err) {
     console.log(err);
-    res.redirect("https://carlosbot.miguel-tibincoski.repl.co/login");
+    res.redirect(`${config.DOMAIN}/login`);
   }
 });
 
 app.get("/dashboard/:id", async (req, res) => {
   let guild = client.guilds.cache.get(req.params.id);
   if (!guild) {
-    res.redirect("https://carlosbot.miguel-tibincoski.repl.co/dashboard");
+    res.redirect(config.DOMAIN + "/dashboard");
   } else {
     res.render("guild.ejs", {
       client: client,
       user: await oauth.getUser(req.session["discordkey"]),
-      guild: guild
+      guild: guild,
+      siteData: {
+        domain: config.DOMAIN,
+        bot: client.user,
+        sessionSecret: config.EXPRESS_SESSION_SECRET
+      }
     });
   }
 });
@@ -286,6 +310,11 @@ app.get("/dashboard/:id", async (req, res) => {
 app.get("/profile", async (req, res) => {
   res.render("profile.ejs", {
     client: client,
+    siteData: {
+      domain: config.DOMAIN,
+      bot: client.user,
+      sessionSecret: config.EXPRESS_SESSION_SECRET
+    },
     user: await oauth.getUser(req.session["discordkey"])
   });
 });
@@ -294,11 +323,17 @@ app.get("/profile/logout", async (req, res) => {
   if (req.session.discordkey != undefined) {
     req.session.discordkey = undefined;
   }
-  res.redirect("https://carlosbot.miguel-tibincoski.repl.co/")
+  res.redirect(`${config.DOMAIN}`)
 });
 
 app.get("/addbot", async (req, res) => {
-  res.render("addbot.ejs");
+  res.render("addbot.ejs", {
+    siteData: {
+      oauthSettings,
+      bot: client.user,
+      sessionSecret: config.EXPRESS_SESSION_SECRET
+    }
+  });
 });
 
 app.get("/login", async (req, res) => res.redirect(oauthSettings.oauthUri));
