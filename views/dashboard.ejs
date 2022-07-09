@@ -85,7 +85,8 @@
   </div>
 
   <div class="container">
-    
+    <%= user.name %>
+    avatar = <%= user.avatar %>
     <div class="row justify-content-around">
       <% guilds.forEach((guild) => { %>
         <a href="./dashboard/<%= guild.id %>" class="col-4">
