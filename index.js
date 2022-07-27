@@ -12,8 +12,10 @@ const config = require("./config.json")
 const fs = require("fs");
 const Discord = require("discord.js");
 
-const utils = require("./utils/autoload")
-utils.sendConsole("--------------------------------------------------\n> > **__Iniciando o processo...__**")
+const utils = require("./utils/autoload");
+utils.sendConsole(
+  "--------------------------------------------------\n> > **__Iniciando o processo...__**"
+);
 const client = new Discord.Client({
   intents: [
     Discord.Intents.FLAGS.GUILDS,
@@ -30,8 +32,8 @@ const client = new Discord.Client({
     Discord.Intents.FLAGS.DIRECT_MESSAGES,
   ],
 
-  partials: ["MESSAGE", "CHANNEL", "REACTION", "USER"]
-})
+  partials: ["MESSAGE", "CHANNEL", "REACTION", "USER"],
+});
 
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
@@ -39,13 +41,13 @@ client.prefix = ".";
 //nicialização
 client.on("ready", async () => {
   const commandFiles = fs
-  .readdirSync("./commands")
-  .filter(file => file.endsWith(".js"));
+    .readdirSync("./bot/commands")
+    .filter((file) => file.endsWith(".js"));
   for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
+    const command = require(`./bot/commands/${file}`);
     client.commands.set(command.name, command);
-    (`${file}`, `✅`);
-  };
+    `${file}`, `✅`;
+  }
   
   let activities = [
     "Use " + client.prefix + "help para obter ajuda!",
@@ -62,8 +64,6 @@ client.on("ready", async () => {
       type: `${types[numero] || "PLAYING"}`
     });
   }, 60000);
-  
-  bot = client.user;
   
   
   console.info("Cliente (BOT) Iniciado!")
@@ -153,12 +153,12 @@ client.on("interactionCreate", async interaction => {
   try {
     if (interaction.isButton()) {
       try {
-        require(`./interactions/buttons/${interaction.customId}.js`)(
+        require(`./bot/interactions/buttons/${interaction.customId}.js`)(
           client,
           interaction
         );
       } catch (err) {
-        require(`./interactions/error.js`)(
+        require(`./bot/interactions/error.js`)(
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
@@ -168,12 +168,12 @@ client.on("interactionCreate", async interaction => {
       }
     } else if (interaction.isSelectMenu()) {
       try {
-        require(`./interactions/menus/${interaction.customId}.js`)(
+        require(`./bot/interactions/menus/${interaction.customId}.js`)(
           client,
           interaction
         );
       } catch (err) {
-        require(`./interactions/error.js`)(
+        require(`./bot/interactions/error.js`)(
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
@@ -183,12 +183,12 @@ client.on("interactionCreate", async interaction => {
       }
     } else if (interaction.isCommand()) {
       try {
-        require(`./interactions/slash/${interaction.commandName}.js`)(
+        require(`./bot/interactions/slash/${interaction.commandName}.js`)(
           client,
           interaction
         );
       } catch (err) {
-        require(`./interactions/error.js`)(
+        require(`./bot/interactions/error.js`)(
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
@@ -197,14 +197,14 @@ client.on("interactionCreate", async interaction => {
         );
       }
     } else {
-      return require(`./interactions/error.js`)(
+      return require(`./bot/interactions/error.js`)(
         client,
         interaction,
         "Ocorreu um erro desconhecido."
       );
     }
   } catch (err) {
-    require(`./interactions/error.js`)(
+    require(`./bot/interactions/error.js`)(
       client,
       interaction,
       "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
@@ -232,7 +232,8 @@ const oauth = new oauth2(oauthSettings);
 
 // middlewares
 app.set("view engine", "ejs");
-app.use(express.static("src"));
+app.set("views", "dashboard/views")
+app.use(express.static("dashboard/src"));
 app.use(
   session({
     secret: config.EXPRESS_SESSION_SECRET,
