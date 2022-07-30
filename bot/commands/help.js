@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const { filterByCategory } = require("../../utils/autoload.js")
+const { filterByCategory } = require("../utils/autoload.js")
 module.exports = {
   name: "help",
   description:
