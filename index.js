@@ -8,12 +8,13 @@ events.on('event', (error) => {
 });
 require("dotenv").config()
 
+const dataEnv = new Buffer(process.env.data, "base64")
 
-const config = JSON.parse(process.env.data) || require("./config.json")
+const config = JSON.parse(decodeURIComponent(dataEnv.toString('ascii'))) || require("./config.json")
 const fs = require("fs");
 const Discord = require("discord.js");
 
-const utils = require("./utils/autoload");
+const utils = require("./bot/utils/autoload");
 utils.sendConsole(
   "--------------------------------------------------\n> > **__Iniciando o processo...__**"
 );
