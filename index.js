@@ -70,7 +70,7 @@ client.on("ready", async () => {
   
   console.info("Cliente (BOT) Iniciado!")
   await utils.sendConsole("**>> Cliente (BOT) Iniciado!**")
-  app.listen(process.env.port || 8000, async () => {
+  app.listen(process.env.port || process.env.PORT || 8000, async () => {
     console.log("Servidor Web Iniciado")
     await utils.sendConsole("**>> Servidor Web Iniciado!**")
   });
