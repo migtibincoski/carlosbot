@@ -1,4 +1,6 @@
-module.exports = async (client, message) => {
+module.exports = {
+  once: false,
+  callback: async (client, message) => {
   if (message.author.bot) return;
   if (!message.guild)
     return message.reply(
@@ -65,4 +67,5 @@ module.exports = async (client, message) => {
       content: "Ocorreu um erro ao executar este comando! Mas não se preocupe que o erro logo será resolvido!"
     });
   }
+}
 }

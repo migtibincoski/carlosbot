@@ -1,15 +1,23 @@
-const fetch = require("superagent")
+const fetch = require("axios")
 
 module.exports = async (message) => {
-	fetch.post("https://discord.com/api/webhooks/979935079604289606/egilrYEa9rdgN4YyrQRmXcLaqYM_t9D42Nx0TxFpcZteOC1mQ9BXEItAn9Ji-BHLRvTE")
-	.send({
+	let execReturn = {}
+	fetch.post(`${process.env.DISCORD_DEBUG_WEBHOOK}`, {
 			content: message,
 			avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG0e6WXDTveQMhJ7CRce-JUkx8S_ZLTWsjrg&usqp=CAU", 
 			username: "⚠️ Carlos Bot - Debug"
 		})
-		.end((error, response) => {
-			return {
-				error, response
+		.then(response => {
+			execReturn = {
+				error: null, 
+        response
 			}
-		  });
+		}).catch(error => {
+			execReturn = {
+				error, 
+        response: null
+			}
+			//console.error(error.response.data)
+		});
+	return execReturn;
 }

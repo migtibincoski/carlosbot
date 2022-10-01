@@ -1,64 +1,68 @@
-module.exports = async (client, interaction) => {
+const utils = require("../utils")
+module.exports = {
+  once: false,
+  callback:  async (client, interaction) => {
   try {
     if (interaction.isButton()) {
       try {
-        require(`../interactions/buttons/${interaction.customId}.js`)(
+        require(`./bot/interactions/buttons/${interaction.customId}.js`)(
           client,
           interaction
         );
       } catch (err) {
-        require(`../interactions/error.js`)(
+        require(`./bot/interactions/error.js`)(
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-            err +
-            "```"
+          err +
+          "```"
         );
       }
     } else if (interaction.isSelectMenu()) {
       try {
-        require(`../interactions/menus/${interaction.customId}.js`)(
+        require(`./bot/interactions/menus/${interaction.customId}.js`)(
           client,
           interaction
         );
       } catch (err) {
-        require(`../interactions/error.js`)(
+        require(`./bot/interactions/error.js`)(
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-            err +
-            "```"
+          err +
+          "```"
         );
       }
     } else if (interaction.isCommand()) {
       try {
-        require(`../interactions/slash/${interaction.commandName}.js`)(
+        require(`./bot/interactions/slash/${interaction.commandName}.js`)(
           client,
           interaction
         );
       } catch (err) {
-        require(`../interactions/error.js`)(
+        require(`./bot/interactions/error.js`)(
           client,
           interaction,
           "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-            err +
-            "```"
+          err +
+          "```"
         );
       }
     } else {
-      return require(`../interactions/error.js`)(
+      return require(`./bot/interactions/error.js`)(
         client,
         interaction,
         "Ocorreu um erro desconhecido."
       );
     }
   } catch (err) {
-    require(`../interactions/error.js`)(
+    require(`./bot/interactions/error.js`)(
       client,
       interaction,
       "Não foi possível concluir esta interação. Tente novamente mais tarde. \n Erro: ```" +
-        err +
-        "```"
+      err +
+      "```"
     );
   }
-};
+}
+}

@@ -1,6 +1,8 @@
 .pnpm-store/
 .idea/
 .vscode/
+package-lock.json
+yarn.lock
 
 config.json
 .glitch-assets
